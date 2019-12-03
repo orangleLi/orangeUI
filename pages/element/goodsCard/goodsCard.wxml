@@ -1,0 +1,28 @@
+<goods-card
+  src="/resources/images/1.jpg"
+  title="商品名称"
+  subTitle="描述信息"
+  price="25.2"
+  number="2"
+  data-id="1"
+  bindtoGoodsDetail="toGoodsDetail"></goods-card>
+<goods-card
+  tag="标签"
+  src="/resources/images/1.jpg"
+  title="商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称"
+  subTitle="描述信息"
+  price="25.2"
+  number="2"
+  data-id="2"
+  bindtoGoodsDetail="toGoodsDetail"></goods-card>
+<goods-card
+  tagIsImage="true"
+  tag="/resources/images/hot.png"
+  src="/resources/images/1.jpg"
+  title="商品名称"
+  subTitle="描述信息描述信息描述信息描述信息描述信息描述信息描述信息"
+  price="25.2"
+  number="1"
+  data-id="3"
+  bindtoGoodsDetail="toGoodsDetail"></goods-card>
+

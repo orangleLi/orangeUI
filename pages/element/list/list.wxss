@@ -1,0 +1,4 @@
+/* pages/element/list/list.wxss */
+.iconfont{
+  margin-right: 8px;
+}

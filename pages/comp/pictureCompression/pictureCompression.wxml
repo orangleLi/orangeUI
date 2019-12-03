@@ -1,0 +1,13 @@
+<!--pages/pictureCompression/pictureCompression.wxml-->
+<view>
+  <button bindtap="chooseImage">选择图片</button>
+</view>
+
+<!-- 展示压缩后的图片 -->
+<view style="display: flex;justify-content: center;flex-direction: column">
+  <image width="50" mode="widthFix" src="{{imagePath}}"></image>
+</view>
+
+<button wx:if="{{imagePath.length>0}}" bindtap="save">点击下载压缩后的图片</button>
+
+<canvas canvas-id='attendCanvasId' class='myCanvas' style='width:{{cWidth}}px;height:{{cHeight}}px;position: fixed;top: -9999px;left: -9999px;'></canvas>

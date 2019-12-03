@@ -1,0 +1,40 @@
+.pay-fail{
+	background-color: #FFFFFF;
+	height: 100%;
+}
+.tac {text-align: center;}
+.color51{color: #333;}
+.size28{font-size: 28rpx;}
+.size34{font-size: 34rpx;}
+.mt30 {margin-top: 30rpx; }
+.fwbold{font-weight: bold;}
+.mt60 {margin-top: 60rpx; }
+.mtb_auto {margin: 0 auto;}
+.mt180{margin-top: 180rpx;}
+.icon_pay {
+  width: 140rpx;
+  height: 140rpx;
+}
+.pay_text_box {
+  padding: 0 78rpx;
+}
+.payp_btn {
+  width: 320rpx;
+  height: 80rpx;
+  border: 2rpx #ffa70a solid;
+  border-radius: 60rpx;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #ffa70a;
+}
+.ffa70a {color: #ffa70a;}
+.payp_btn_box {
+  position: fixed;
+  bottom: 155rpx;
+  width: 100%;
+}
+.icon-chenggong{
+  font-size: 56px;
+  color: #ffa70a;
+}

@@ -1,0 +1,28 @@
+<!--components/distpicker/distpicker.wxml-->
+<view class="distpicker-address-wrapper">
+  <view class="mask" bindtap="close"></view>
+  <view class="distpicker-address">
+    <view class="address-header">
+      <view class="ul">
+        <view class="li active" bindtap="transProvince">{{province}}</view>
+        <view class="li {{city!==''?'active':''}}" bindtap="transCity">{{city}}</view>
+        <view class="li {{area!==''?'active':''}}">{{area}}</view>
+      </view>
+    </view>
+    <view class="address-container">
+      <view class="initials" wx:if="{{tag === 0}}">
+        <view class="initials-item" wx:for="{{letter}}" wx:key="{{index}}" wx:if="{{Initials[item]}}">
+          <span class="initials-title">{{item}}</span>
+          <view class="ul">
+            <view class="li" wx:for="{{Initials[item]}}" 
+            wx:for-item="ite" wx:for-index="idx" wx:key="{{idx}}" 
+            data-id="{{ite[idFieldName]}}" data-name="{{ite[nameFieldName]}}" bindtap="getData">{{ite[nameFieldName]}}</view>
+          </view>
+        </view>
+      </view>
+      <view wx:elif="showData.length>0" class="ul">
+        <view class="li"data-id="{{item[idFieldName]}}" data-name="{{item[nameFieldName]}}" bindtap="getData" wx:for="{{showData}}" wx:key="index">{{item[nameFieldName]}}</view>
+      </view>
+    </view>
+  </view>
+</view>

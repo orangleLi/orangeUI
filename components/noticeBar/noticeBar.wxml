@@ -1,0 +1,12 @@
+<!--components/noticeBar/noticeBar.wxml-->
+<view class="notice-bar" style="background: {{backgroundColor}}; color: {{color}};">
+  <view wx:if="{{leftIcon&&leftIcon.length>0}}" class="left icon" style="background: {{backgroundColor}};">
+    <icon class="iconfont {{leftIcon}}"></icon>
+  </view>
+  <view class="middle" style="background: {{backgroundColor}};">
+    <text class="{{scrollable?'scrollable ani':''}} {{wrapable?'':'clamp'}}">{{text}}</text>
+  </view>
+  <view class="right icon" style="background: {{backgroundColor}};">
+    <icon class="iconfont icon-right"></icon>
+  </view>
+</view>

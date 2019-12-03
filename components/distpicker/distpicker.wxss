@@ -1,0 +1,57 @@
+.distpicker-address-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1002;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.distpicker-address{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: rgb(153, 153, 153);
+}
+.distpicker-address-wrapper .address-header{
+  background-color: #fff;
+}
+.distpicker-address-wrapper .ul {
+  margin: 0;
+  padding: 0;
+}
+.distpicker-address-wrapper .address-header .ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.distpicker-address-wrapper .address-header .ul .li {
+  padding: 8px 0.3rem;
+  color: #000;
+}
+.distpicker-address-wrapper .address-header .active {
+  border-bottom: rgb(255, 92, 31) solid 3px;
+  color: rgb(255, 92, 31);
+}
+.distpicker-address-wrapper .address-container {
+  background-color: #fff;
+}
+.distpicker-address-wrapper .address-container {
+  max-height: 300px;
+  overflow: scroll;
+}
+.distpicker-address-wrapper .address-container .ul {
+  height: 100%;
+  overflow: auto;
+}
+.initials-title{
+  padding-left: 10px;
+}
+.distpicker-address-wrapper .address-container .ul .li {
+  padding: 8px 10px;
+  border-top: 1px solid #f6f6f6;
+}

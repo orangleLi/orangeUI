@@ -1,0 +1,3 @@
+<button class="btn {{type}} {{theme}} {{circle}} {{icon}}" disabled="{{disabled}}">
+  <slot></slot>
+</button>

@@ -1,0 +1,134 @@
+<!--pages/element/btn/btn.wxml-->
+<view class="btn-wrapper">
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" theme="theme">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="primary">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="success">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="green">确定</o-button>
+    </view>
+  </view>
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" theme="themebg">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="primarybg">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="successbg">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="greenbg">确定</o-button>
+    </view>
+  </view>
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" theme="themebg" circle="circle">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="primarybg" circle="circle">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="successbg" circle="circle">确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="greenbg" circle="circle">确定</o-button>
+    </view>
+  </view>
+  <view class="title"><text>图标按钮</text></view>
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" theme="themebg" icon="icon"><i class="iconfont icon-shoucang"></i></o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="primarybg" icon="icon"><i class="iconfont icon-sousuo"></i></o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="successbg" icon="icon"><i class="iconfont icon-chuangzuo"></i></o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="greenbg" icon="icon"><i class="iconfont icon-shanchu"></i></o-button>
+    </view>
+  </view>
+  <view class="title"><text>禁用按钮</text></view>
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" theme="themebg" disabled>确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="primarybg" disabled>确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="successbg" disabled>确定</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" theme="greenbg" disabled>确定</o-button>
+    </view>
+  </view>
+  <view class="title"><text>故宫四季</text></view>
+  <view class="small-btn">
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="zhongxiabg">仲夏</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="yanyuhui">燕羽灰</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="xueshanbluebg">雪山蓝</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="yueyingwhitebg">月影白</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="zhusharedbg">朱砂红</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="muchunbg">暮春</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="shuangxubg">霜序</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="xiekeredbg">蟹殻红</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="xiekeredbg">景泰蓝</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="hanchunbg">酣春</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="tengluozibg">藤萝紫</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="longqianyuebg">龍潜月</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="wanqiubg">晚秋</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="yinxingyellowbg">银杏初黄</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="koushaogreenbg">寇梢绿</o-button>
+    </view>
+    <view class="btn-item">
+      <o-button type="normal" circle="circle" theme="huaixiabg">槐夏</o-button>
+    </view>
+  </view>
+  
+  <view class="title"><text>全屏按钮</text></view>
+  <view class="btn-item">
+    <o-button theme="themebg">Click me</o-button>
+  </view>
+  <view class="btn-item">
+    <o-button theme="themebg" class="iconfontRight"><i class="iconfont icon-saoyisao"></i>Click me</o-button>
+  </view>
+</view>

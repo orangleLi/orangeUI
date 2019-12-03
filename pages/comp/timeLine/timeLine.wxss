@@ -1,0 +1,97 @@
+/* pages/comp/timeLine/timeLine.wxss */
+.time-line-title{
+  font-size: 32rpx;
+  color: #333;
+  margin: 0 30rpx;
+  display: block;
+}
+/* 公共样式 */
+.logistics-content{
+  background-color: #fff;
+  padding: 15px;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+.logistics-item{
+  padding-bottom: 30px;
+  display: flex;
+  position: relative;
+}
+.logistics-item:nth-last-of-type(1){
+  padding-bottom: 0;
+}
+.logisticsInfo{
+  width: 100%;
+}
+.line:after{
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  right: auto;
+  bottom: auto;
+  height: 100%;
+  width: 1px;
+  background-color: rgb(230, 230, 230);
+  display: block;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.themeColor{
+  color: #ff5b1f;
+}
+.date{
+  font-size: 12px;
+}
+/* 公共样式 */
+
+/* 实心圆点 */
+.themeColorBg{
+  background-color: #ff5b1f!important;
+}
+.circle{
+  margin-right: 15px;
+  width: 9px;
+  height: 9px;
+  background-color: rgb(153, 153, 153);
+  margin-top: 0.12rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* 实心圆点 */
+
+
+/* 空心圆点 */
+.themeHollowCricle{
+  border: 3px solid #ff5b1f!important;
+}
+.hollowCircle{
+  margin-right: 15px;
+  margin-top: 0.12rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border: 3px solid #f1f1f1;
+}
+/* 空心圆点 */
+
+/* 卡片式 */
+.timestamp{
+  font-size: 24rpx;
+}
+.card{
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  background-color: #fff;
+  overflow: hidden;
+  transition: .3s;
+  padding: 20rpx 30rpx;
+  margin-top: 15rpx;
+}
+/* 卡片式 */

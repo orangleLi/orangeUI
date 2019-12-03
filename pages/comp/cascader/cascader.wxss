@@ -1,0 +1,17 @@
+.btn {
+  width: 80px;
+  font-size: 14px;
+  padding: .3em .8em;
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: #58a linear-gradient(hsla(0, 10%, 100%, .2), transparent);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -.05em .05em rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transform: translate(0px, 0px);
+}
+.btn:active{
+  transform: translate(0.5px, 0.5px);
+  opacity: 0.8;
+}

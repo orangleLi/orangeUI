@@ -1,0 +1,16 @@
+/* pages/drawPosterTest.wxss */
+.posterCanvas{
+  background-color: #fff;
+}
+.offScreen{
+  position: fixed;
+  top: -99999px;
+  left: -99999px;
+}
+.posterCanvas{
+  width: 100%;
+}
+.poster{
+  width: 100%;
+  background-color: #fff;
+}

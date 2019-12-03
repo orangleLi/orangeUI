@@ -1,0 +1,53 @@
+@import "../../app.wxss";
+.notice-bar{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.iconfont{
+  font-size: 42rpx;
+}
+.icon{
+  width: 45px;
+  height: 45px;
+  top: 0;
+  line-height: 45px;
+  text-align: center;
+  z-index: 1002;
+}
+.left{
+  left: 0;
+}
+.right{
+  right: 0;
+}
+.middle{
+  flex: 1;
+  position: relative;
+  padding-left: 30rpx;
+  z-index: 1001;
+  line-height: 45px;
+  font-size: 26rpx;
+}
+.scrollable{
+  white-space: nowrap;
+  position: absolute;
+  padding-left: 340px;
+  overflow: hidden;
+}
+.ani{
+  animation: van-notice-bar-play-infinite linear infinite both;
+  animation-delay: 0s;
+  animation-duration: 17.6006s;
+}
+@keyframes van-notice-bar-play-infinite{
+  100%{
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.clamp{ 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

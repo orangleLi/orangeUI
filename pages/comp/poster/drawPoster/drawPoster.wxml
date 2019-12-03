@@ -1,0 +1,16 @@
+<!-- <image src="../../../../resources/images/1.jpg"></image> -->
+<canvas style="width: {{width}}px;height:{{height}}px;" class="shareCanvas offScreen" canvas-id="shareImg"></canvas>
+<canvas style="width: {{width}}px;height:{{height}}px;" class="shareCanvas offScreen" canvas-id="bgImg"></canvas>
+<image style="width: 100%;" src='{{endImg}}' mode='widthFix'></image>
+
+<view class="mask"></view>
+<view class="main" style="transform: translateY(-{{height > 1800 ? 5:16}}%);">
+  <image data-h="{{height}}" id="showImg" class="endImg" style="" src='{{endImg}}' mode='widthFix' bindtap="saveImg"></image>
+  <image class="bgRect" src="/resources/images/rect.png"></image>
+  <button open-type="{{openSetting}}" class="saveBtn openSettingBtn">
+    <image style="left: 0;" id="saveImg" class="saveBtn" src="/resources/images/saveImg.png" bindtap="saveImg"></image>
+  </button>
+  
+</view>
+<image class="closeShare" src="/resources/images/closeShare.png" bindtap="closeShareModal"></image>
+<authorizeModal class="{{toAuthorize?'':'dphone'}}" bind:toAuthorizeClick="toAuthorizeClick"></authorizeModal>

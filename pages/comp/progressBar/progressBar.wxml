@@ -1,0 +1,21 @@
+<!--pages/comp/progressBar/progressBar.wxml-->
+<view class="progressBar">
+  <view class="title">百分比内显</view>
+  <view class="progress-box progress-inside">
+    <view class="progress" style="width: {{percentage>100?100:percentage}}%">
+      <text class="percentage">{{percentage>100?100:percentage}}%</text>
+    </view>
+  </view>
+
+  <view class="title">线形进度条</view>
+  <view class="progress-outside">
+    <view class="progress-box">
+      <view class="progress" style="width: {{percentage>100?100:percentage}}%"></view>
+    </view>
+    <text class="percentage">{{percentage>100?100:percentage}}%</text>
+  </view>
+
+  
+  <view class="title">环形进度条</view>
+  <progress-bar id="progress" percentage="{{percentage}}"></progress-bar>
+</view>

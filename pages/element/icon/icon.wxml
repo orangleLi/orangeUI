@@ -1,0 +1,139 @@
+<!--pages/element/icon/icon.wxml-->
+<view class="icon-wrapper">
+  <div class="icon-item">
+    <i class="iconfont icon-icon10"></i>
+    <text>Left</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-right"></i>
+    <text>Right</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-saoyisao"></i>
+    <text>Scan</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-sousuo"></i>
+    <text>Search</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-shoucang"></i>
+    <text>Collect</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-aixin"></i>
+    <text>Heart</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-bianji"></i>
+    <text>Edit</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-bangzhu"></i>
+    <text>Help</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-buganxingqu"></i>
+    <text>Uninterested</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-bofangjilu"></i>
+    <text>Edit</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-chuangzuo"></i>
+    <text>Create</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-chenggong"></i>
+    <text>success</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-fail"></i>
+    <text>fail</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-dianhua"></i>
+    <text>Phone</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-dianzan"></i>
+    <text>Like</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-dingwei"></i>
+    <text>Location</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-ditu"></i>
+    <text>Map</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-dingdan"></i>
+    <text>Order</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-gengduo"></i>
+    <text>More</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-fuzhi"></i>
+    <text>Copy</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-fenxiang"></i>
+    <text>Share</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-huiyuan"></i>
+    <text>VIP</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-jianshao"></i>
+    <text>sub</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-zengjia"></i>
+    <text>Add</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-shanchu"></i>
+    <text>Delete</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-shezhi"></i>
+    <text>Set</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-shouye"></i>
+    <text>Index</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-tupian"></i>
+    <text>Image</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-weixin"></i>
+    <text>WeChat</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-xiangkan"></i>
+    <text>Favorite</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-aixin1"></i>
+    <text>Heart</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-chenggong1"></i>
+    <text>Success</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-pro-fail"></i>
+    <text>fail</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-dianzan1"></i>
+    <text>Like</text>
+  </div>
+</view>

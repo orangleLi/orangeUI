@@ -1,0 +1,29 @@
+<list wx:for="{{iconList}}" wx:key="{{index}}"
+      icon="{{item.icon}}"
+      title="{{item.title}}"
+      desc="{{item.desc}}"
+      src="{{item.src}}"
+      key="{{index}}">
+</list>
+
+<list icon="{{''}}"
+      title="{{'左边插槽'}}"
+      desc="{{''}}"
+      src="{{'/resources/images/right.png'}}">
+  <i class="iconfont icon-bianji" slot="icon"></i>
+</list>
+
+<list icon="{{''}}"
+      title="{{'右边插槽'}}"
+      desc="{{'点我'}}"
+      src="{{'/resources/images/right.png'}}"
+      bindnavTo="navTo">
+  <i class="iconfont icon-xiangkan" slot="fun"></i>
+</list>
+
+<list icon="{{''}}"
+      title="{{'开关'}}"
+      desc="{{''}}"
+      src="{{'/resources/images/right.png'}}">
+  <switch checked="true" slot="fun"></switch>
+</list>

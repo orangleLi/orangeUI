@@ -1,0 +1,65 @@
+<!--pages/comp/comp.wxml-->
+<view class="element-bar">
+    <view class="fun-box bg-blue" style="--second: 1;" data-url="./swiper/swiper" bindtap="navTo">
+      <view>轮播图</view>
+      <view>Swiper</view>
+    </view>
+
+    <view class="fun-box bg-orange" style="--second: 1.2;" data-url="./classify-bar/classify-bar" bindtap="navTo">
+      <view>分类导航</view>
+      <view>classifyNav</view>
+    </view>
+
+    <view class="fun-box bg-pink" style="--second: 1.2;" data-url="./Location/Location" bindtap="navTo">
+      <view>地图定位</view>
+      <view>Map</view>
+    </view>
+
+    <view class="fun-box bg-olive" style="--second: 1.4;" data-url="./timeLine/timeLine" bindtap="navTo">
+      <view>时间轴</view>
+      <view>Timeline</view>
+    </view>
+
+    <view class="fun-box bg-cyan" style="--second: 1.6;" data-url="./pictureCompression/pictureCompression" bindtap="navTo">
+      <view>图片压缩</view>
+      <view>Compression</view>
+    </view>
+
+    <view class="fun-box bg-brown" style="--second: 1.8;" data-url="./slidingSwitch/slidingSwitch" bindtap="navTo">
+      <view>选项卡</view>
+      <view>Option</view>
+    </view>
+
+    <view class="fun-box bg-red" style="--second: 2;" data-url="./slide/slide" bindtap="navTo">
+      <view>滑动删除</view>
+      <view>SlideDelete</view>
+    </view>
+
+    <view class="fun-box bg-green" style="--second: 2.2;" data-url="./addShoppingCarAnimate/addShoppingCarAnimate" bindtap="navTo">
+      <view>购物车动画</view>
+      <view>Cart</view>
+    </view>
+
+    <view class="fun-box bg-purple" style="--second: 2.6;" data-url="./initialQuery/initialQuery" bindtap="navTo">
+      <view>通讯录字母查询</view>
+      <view>InitialQuery</view>
+    </view>
+
+    <view class="fun-box bg-blue" style="--second: 3.2;" data-url="./cascader/cascader" bindtap="navTo">
+      <view>级联选择</view>
+      <view>Cascader</view>
+    </view>
+    <view class="fun-box bg-grey" style="--second: 3.4;" data-url="./poster/poster" bindtap="navTo">
+      <view>绘制海报</view>
+      <view>Poster</view>
+    </view>
+    <view class="fun-box bg-pink" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
+      <view>进度条</view>
+      <view>ProgressBar</view>
+    </view>
+    <!-- <view class="fun-box bg-cyan" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
+      <view>地址选择</view>
+      <view>ProgressBar</view>
+    </view> -->
+    <!--文本截断 数字框 开关 商品列表 功能列表 购物车商品列表 -->
+  </view>

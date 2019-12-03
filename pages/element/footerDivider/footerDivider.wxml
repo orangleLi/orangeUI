@@ -1,0 +1,6 @@
+<view class="footer-divider">
+  <footer-divider all="true"></footer-divider>
+  <footer-divider>到底啦</footer-divider>
+  <footer-divider>Time Travel</footer-divider>
+  <footer-divider><i class="iconfont icon-aixin"></i></footer-divider>
+</view>

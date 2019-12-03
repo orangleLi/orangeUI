@@ -1,0 +1,6 @@
+.footer-divider{
+  margin: 0 30rpx;
+}
+.iconfont{
+  font-size: 26rpx!important;
+}

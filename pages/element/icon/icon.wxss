@@ -1,0 +1,29 @@
+/* pages/element/icon/icon.wxss */
+.icon-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 15px 0;
+}
+.icon-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  line-height: 40px;
+  padding: 10px 0 15px;
+  border: 1px solid #ccc;
+  border-left-width: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #888;
+}
+.icon-item:hover, .icon-item:active{
+  color: #0081ff;
+}
+.icon-item text{
+  font-size: 14px;
+}
+.iconfont{
+  font-size: 48rpx;
+}

@@ -1,0 +1,15 @@
+<!--pages/comp/cascader/cascader.wxml-->
+<view class="box">
+  <view class="btn" bindtap="clickBtn">Click me</view>
+  <text>{{province}}{{city}}{{area}}</text>
+</view>
+<distpicker wx:if="{{show}}"
+            showData="{{showData}}"
+            idFieldName="{{idFieldName}}"
+            nameFieldName="{{nameFieldName}}"
+            bindonChangeProvince="onChangeProvince"
+            bindonChangeCity="onChangeCity"
+            bindonChangeArea="onChangeArea"
+            bindtransProvince="transProvince"
+            bindtransCity="transCity"
+            bindclose="close"></distpicker>

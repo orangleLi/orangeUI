@@ -1,0 +1,12 @@
+<view class="pay-fail">
+  <view>
+    <view class="tac mt180">
+      <icon class="iconfont icon-pro-fail"></icon>
+    </view>
+    <view class="size34 tac mt30 color51">支付失败</view>
+    <view class="size28 mt60 pay_text_box tac cff363d">支付失败，请返回我的订单页面再次支付</view>
+  </view>
+  <view class="payp_btn_box " bindtap="navTo">
+    <view class="payp_btn mtb_auto">返回我的订单</view>
+  </view>
+</view>

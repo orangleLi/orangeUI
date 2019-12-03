@@ -1,0 +1,104 @@
+/**app.wxss**/
+/* #ff5c1e rgb(255, 92, 30) */
+/* #ff7002 rgb(255, 112, 2) */
+@import '/resources/Iconfont/iconfont.wxss';
+@import '/resources/orangeui.wxss';
+
+.bg-blue{
+  background-color: #0081ff;
+  color: #ffffff;
+}
+.bg-orange{
+  background-color: #f37b1d;
+  color: #ffffff;
+}
+.bg-olive{
+  background-color: #8dc63f;
+  color: #ffffff;
+}
+.bg-cyan{
+  background-color: #1cbbb4;
+  color: #ffffff;
+}
+.bg-brown{
+  background-color: #a5673f;
+  color: #ffffff;
+}
+.bg-purple{
+  background-color: #6739b6;
+  color: #ffffff;
+}
+.bg-pink{
+  background-color: #e03997;
+  color: #ffffff;
+}
+.bg-red{
+  background-color: #e54d42;
+  color: #ffffff;
+}
+.bg-green{
+  background-color: #39b54a;
+  color: #ffffff;
+}
+.bg-grey{
+  background-color: #8799a3;
+  color: #ffffff;
+}
+.content{
+  display: flex;
+  flex-flow:row wrap;
+}
+
+.element-bar{
+  margin-top: 15rpx;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fun-box{
+  padding: 15px;
+  border-radius: 6px;
+  width: 45%;
+  max-width: 200px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 2.5% 20px;
+  /* animation: show calc(var(--second) * 1s) ease 0s 1 normal none runningS */
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+  /* 5%, 50% {
+    transform: scale(1);
+  }
+  10% {
+      transform: scale(0.9);
+  }
+  15% {
+      transform: scale(1.05);
+  }
+  20% {
+      transform: scale(1.05) rotate(-5deg);
+  }
+  25% {
+      transform: scale(1.05) rotate(5deg);
+  }
+  30% {
+      transform: scale(1.05) rotate(-3deg);
+  }
+  35% {
+      transform: scale(1.05) rotate(2deg);
+  }
+  40% {
+      transform: scale(1.05) rotate(0);
+  } */
+}

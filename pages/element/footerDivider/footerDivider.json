@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "footer-divider": "../../../components/footerDivider/footerDivider"
+  }
+}

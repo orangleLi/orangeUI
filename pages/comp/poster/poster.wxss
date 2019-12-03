@@ -1,0 +1,11 @@
+/* pages/comp/poster/poster.wxss */
+.item{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-indent: 50rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.item:nth-of-type(1) {
+  margin-top: 30rpx;
+  border-top: 1rpx solid #eee;
+}

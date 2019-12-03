@@ -1,0 +1,146 @@
+.bg{
+  background-color: #fff;
+}
+button::after{
+  border: none;
+}
+.themeBg{
+  background: linear-gradient(to bottom right, #ff5b1f , #ff7200);
+  /* background-color: rgb(255, 92, 31); */
+  color: #fff;
+}
+.hidden{
+  opacity: 0!important;
+}
+.dphone{
+  display: none;
+}
+
+/* 列表单个项样式 */
+.goodsItem{
+  display: flex;
+  /* margin: 15rpx 0 0 0; */
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.goodsItem .mainImg{
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #eee;
+}
+.goodsInfo{
+  margin-left: 20rpx;
+  position: relative;
+  width: 370rpx;
+  margin-top: 10rpx;
+}
+.goodsInfo .goodsTitle{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 30rpx;
+}
+.price-num{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.numGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numGroup input{
+  width: 50rpx;
+  margin: 0 15rpx;
+  border: 1rpx solid #eee;
+  text-align: center;
+}
+.price{
+  color: rgb(255, 92, 31);
+  font-size: 28rpx;
+}
+.largePrice{
+  color: rgb(255, 92, 31);
+  font-size: 34rpx;
+}
+.originPrice{
+  margin-left: 15rpx;
+  text-decoration: line-through;
+  font-size: 26rpx;
+}
+.largeOriginPrice{
+  margin-left: 15rpx;
+  text-decoration: line-through;
+  font-size: 28rpx;
+}
+/* 列表单个项样式 */
+
+.card{
+  margin: 30rpx;
+  padding: 30rpx;
+}
+
+
+.size32{
+  font-size: 32rpx;
+}
+.size30{
+  font-size: 30rpx;
+}
+.size28{
+  font-size: 28rpx;
+}
+.size26{
+  font-size: 26rpx;
+}
+.size24{
+  font-size: 24rpx;
+}
+.size22{
+  font-size: 22rpx;
+}
+
+.icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.color51{
+  color: rgb(51, 51, 51)
+}
+.color153{
+  color: rgb(153, 153, 153)
+}
+.color102{
+  color: rgb(102, 102, 102);
+}
+
+.active{
+  color: rgb(255, 92, 31);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.goodsempty{
+  text-align: center;
+  margin-top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  width: 568rpx;
+}
+.goodsempty image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.dpnone{
+  display: none!important;
+}

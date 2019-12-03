@@ -1,0 +1,7 @@
+<!--pages/Slide/slide.wxml-->
+<view class="main">
+  <view class="slide {{active?'touch-move':''}}" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    展示信息 - 左滑右滑事件
+  </view>
+  <view class="delete {{active?'touch-move':''}}">删除</view> 
+</view>

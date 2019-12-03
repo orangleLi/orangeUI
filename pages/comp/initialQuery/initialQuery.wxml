@@ -1,0 +1,18 @@
+<!--pages/comp/initialQuery/initialQuery.wxml-->
+<view class="initialQuery-wrapper">
+  <view class="main">
+    <scroll-view scroll-y="true" scroll-with-animation="true" scroll-into-view="{{toView}}" bindscroll="onScroll" style="height: {{sceenHeight}}px;overflow:hidden;">
+      <view class="initial-item" wx:for="{{singer}}" wx:key="index" id="initial-{{index}}">
+        <view class="title">{{item.title}}</view>
+        <view class="singer-item" wx:for="{{item.items}}" wx:for-index="idx" wx:for-item="itm" wx:key="idx">
+          <image src="{{itm.avatar}}"></image>
+          <text>{{itm.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="nav">
+    <view wx:for="{{initial}}" wx:key="index" class="{{index===activeIndex?'active':''}}"
+    data-index="{{index}}" bindtap="navTo">{{item}}</view>
+  </view>
+</view>

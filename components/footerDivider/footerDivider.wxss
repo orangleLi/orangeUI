@@ -1,0 +1,20 @@
+/* components/footerDivider/footerDivider.wxss */
+.footerDivider{
+  display: flex;
+  align-items: center;
+  margin: 80rpx 0;
+  height: 30rpx;
+}
+.line{
+  height: 1px;
+  background: rgb(229, 229, 229);
+  flex: 1;
+}
+.middle{
+  padding: 0 15rpx;
+  font-size: 24rpx;
+  color: rgb(170, 170, 170);
+}
+.iconfont{
+  font-size: 24rpx!important;
+}

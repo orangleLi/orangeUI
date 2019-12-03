@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/element/element",
+    "pages/comp/comp",
+    "pages/element/icon/icon",
+    "pages/element/btn/btn",
+    "pages/comp/swiper/swiper",
+    "pages/comp/classify-bar/classify-bar",
+    "pages/comp/slidingSwitch/slidingSwitch",
+    "pages/comp/addShoppingCarAnimate/addShoppingCarAnimate",
+    "pages/comp/slide/slide",
+    "pages/comp/initialQuery/initialQuery",
+    "pages/comp/Location/Location",
+    "pages/comp/pictureCompression/pictureCompression",
+    "pages/comp/poster/poster",
+    "pages/comp/poster/drawPoster/drawPoster",
+    "pages/comp/poster/drawPosterTest/drawPosterTest",
+    "pages/comp/timeLine/timeLine",
+    "pages/comp/progressBar/progressBar",
+    "pages/comp/cascader/cascader",
+    "pages/element/footerDivider/footerDivider",
+    "pages/element/list/list",
+    "pages/element/goodsCard/goodsCard",
+    "pages/element/resultPage/success/success",
+    "pages/element/resultPage/fail/fail",
+    "pages/element/noticeBar/noticeBar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "orangeUI",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2a2e41",
+    "selectedColor": "#ff5c1e",
+    "list": [
+      {
+        "pagePath": "pages/element/element",
+        "text": "元素",
+        "iconPath": "/resources/images/icon_element.png",
+        "selectedIconPath": "/resources/images/icon_element_s.png"
+      },
+      {
+        "pagePath": "pages/comp/comp",
+        "text": "组件",
+        "iconPath": "/resources/images/icon_index.png",
+        "selectedIconPath": "/resources/images/icon_index_s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

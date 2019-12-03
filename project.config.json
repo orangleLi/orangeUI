@@ -1,0 +1,136 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx25b5049efc8d3843",
+	"projectname": "orangeUI",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "icon/icon",
+					"pathName": "pages/element/icon/icon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "btn/btn",
+					"pathName": "pages/element/btn/btn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "swiper/swiper",
+					"pathName": "pages/comp/swiper/swiper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "initialQuery",
+					"pathName": "pages/comp/initialQuery/initialQuery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "timeLine",
+					"pathName": "pages/comp/timeLine/timeLine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "progressBar",
+					"pathName": "pages/comp/progressBar/progressBar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cascader",
+					"pathName": "pages/comp/cascader/cascader",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "list/list",
+					"pathName": "pages/element/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "drawPoster",
+					"pathName": "pages/comp/poster/drawPoster/drawPoster",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "goodsCard",
+					"pathName": "pages/element/goodsCard/goodsCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "noticeBar",
+					"pathName": "pages/element/noticeBar/noticeBar",
+					"scene": null
+				}
+			]
+		}
+	}
+}

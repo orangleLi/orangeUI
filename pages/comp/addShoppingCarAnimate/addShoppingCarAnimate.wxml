@@ -1,0 +1,102 @@
+<!--pages/releaseGoods/selectGoods/selectGoods.wxml-->
+<view class="selectGoods-wrapper">
+  <view class='content' id="searchBar">
+    <view class='searchGroup'>
+      <view class='listSearch'>
+        <image class='iconSearch imageCls' src='/resources/images/icon_search.png'></image>
+        <input bindinput='getGoodsInfo' placeholder='输入搜索商品名称' value="{{keyword}}"></input>
+        <view class='iconDel' bindtap="clearKeyword" cursor-spacing='20'>
+          <image src='/resources/images/icon_del03.png'></image>
+        </view>
+      </view>
+      <view bindtap='searchBtnFun' class='searchBtn'>确定</view>
+    </view>
+  </view>
+  <view class="category-wrapper">
+    <view class="categoryList">
+      <view class="categoryItem {{index===nowIndex?'select bg':''}}" 
+      wx:for="{{categoryList}}"  wx:key="unique" data-idx="{{index}}"
+      data-id="{{item.Id}}"
+      bindtap="changecategoryTag">       
+        <view class="rect {{index===nowIndex?'':'dphone'}}"></view>
+        <text>{{item.Name}}</text>
+      </view>
+    </view>
+
+    <view id="index-nav" class="categoryGoods">
+      <view class="goodsItem bg" 
+      wx:for="{{nowShowData}}"  wx:key="unique" data-idx="{{index}}">
+        <image class="mainImg" src="{{item.ImageUrl}}"></image>
+        <view class="goodsInfo">
+          <text class='goodsTitle'>{{item.ProductName}}</text>
+          <view class="price-num">
+            <view class="priceGroup">
+              <text class="price">￥{{item.Price}}</text>
+              <text class="originPrice size26">{{item.originalPrice}}</text>
+            </view>
+            <view wx:if="{{item.isSelect}}" class="numGroup" bindtap="deleteGoods" data-id="{{item.skuId}}" data-index="{{index}}">
+              <image class="icon" src="/resources/images/icon_c_red.png"></image>
+            </view>
+            <view wx:else class="numGroup" bindtap="selectGoods" data-id="{{item.skuId}}" data-index="{{index}}">
+              <image class="icon" src="/resources/images/icon_add01.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      
+      <!-- <view class="goodsempty {{nowShowData.length===0?'':'dpnone'}}">
+        <image src="/resources/images/none.png"></image>
+        <text class="size30 color153">没有喔~</text>
+      </view> -->
+
+      <view class="loading-end {{nowShowData.length===0?'dpnone':''}} {{isLoadingEnd?'':'dpnone'}}">
+        <text></text>
+        <text>我是有底线的</text>
+      </view>
+    </view>
+    
+    
+  </view>
+  <!--  wx:if="{{nowSelectData.length > 0}}" -->
+  <view class="shopcar-wrapper">
+    <view bindtap="transShoppingCar" class="mask {{nowSelectData.length > 0 && shoppingCarIsShow?'':'dphone'}}"></view>
+    <view class="info">
+      <view animation="{{animationData}}" class="foods {{shoppingCarIsShow?'':'dphone'}}" wx:if="{{nowSelectData.length > 0}}">
+        <view class="operator">
+          <view class="size28">已选优品</view>
+          <view class="cancelSelect size28" bindtap="cancelSelect">
+            <image src="/resources/images/icon_del.png"></image>
+            <text>全部清空</text>
+          </view>
+        </view>
+        <view class="listGroup">
+          <view class="list" wx:for="{{nowSelectData}}" wx:key="unique">
+            <view class="name">{{item.ProductName}}</view>
+            <view class="numOpera">
+              <image bindtap="deleteGoods" data-id="{{item.skuId}}" class="icon" src="/resources/images/icon_c_red.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="opera">      
+        <view class="iconGroup item" bindtap="transShoppingCar" id="shoppingCar">
+          <view class="icon">
+            <image src="/resources/images/gwc_icon.png"></image>
+          </view>
+          <view class="num themeBg" wx:if="{{nowSelectData.length > 0}}">
+            <text>{{nowSelectData.length}}</text>
+          </view>
+        </view>
+        <view class="distributionFee item color51">
+          <text class="size30">共{{nowSelectData.length}}个商品</text>
+        </view>
+        <view bindtap="confirmSelect" class="allPrice item themeBg size34">确定选择</view>
+      </view>
+    </view>
+  </view> 
+
+  <view class="animat" style="{{style}}">
+    <image class="icon" src="/resources/images/icon_add01.png"></image>
+  </view>
+ 
+</view>

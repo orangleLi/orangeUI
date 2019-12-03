@@ -1,0 +1,121 @@
+.btn{
+  color: #fff;
+  /* box-shadow: 0 5rpx 10rpx rgba(0, 0, 0, 0.5); */
+  width: 690rpx;
+  padding: 0;
+  margin: 0 auto;
+}
+.btn.normal{
+  width: 152rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+.btn.theme{
+  background: #ffebe3;
+  border: 1rpx solid #f9ae93;
+  color: #f9875e;
+}
+.btn.primary{
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+}
+.btn.success{
+  background: #ecf5ff;
+  border: 1px solid #b3d8ff;
+  color: #409eff;
+}
+.btn.green{
+  color: #67c23a;
+  background: #f0f9eb;
+  border: 1px solid #c2e7b0;
+}
+.btn.themebg{
+  background: linear-gradient(to bottom right, #ff5b1f , #ff7200)!important;
+}
+.btn.primarybg{
+  background: #fff!important;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+}
+.btn.successbg{
+  background: #409eff!important;
+}
+.btn.greenbg{
+  background: #67c23a!important;
+}
+button[disabled]{
+  opacity: 0.5;
+}
+.btn.circle{
+  border-radius: 30rpx;
+}
+.btn.icon{
+  width: 70rpx!important;
+  height: 70rpx!important;
+  line-height: 70rpx!important;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.btn.koushaogreenbg{
+  background: #618561; /* 寇梢绿 */
+}
+.btn.zhusharedbg{
+  background: #c5503e /* 朱砂红 */
+}
+.btn.yinxingyellowbg{
+  background: #eddd74
+}
+.btn.yueyingwhitebg{
+  background: #c6d8eb;
+}
+.btn.xiekeredbg{
+  background: #db8b55;
+}
+.btn.xueshanbluebg{
+  background: #7ca7c9;
+}
+.btn,jingtaibluebg{
+  background: #3b689f;
+}
+.btn.tengluozibg{
+  background: #d8b7d4;
+}
+.btn.zhongxiabg{
+  background: #345985;
+}
+.btn.muchunbg{
+  background: #cd5743;
+}
+.btn.huaixiabg{
+  background: #6e8859;
+}
+.btn.longqianyuebg{
+  background: #f4eaf5;
+}
+.btn.shuangxubg{
+  background: #df6a49;
+}
+.btn.wanqiubg{
+  background: #e4c547;
+}
+.btn.hanchunbg{
+  background: #e1b9bd;
+}
+.btn.yanyuhui{
+  background: #5d6e80;
+}
+/* #e1b9bd 9fccf6*/
+button::after {
+  border: none;
+}
+.btn:active{
+  transform: translate(0.5px, 0.5px);
+  opacity: 0.8;
+}
+.btn .iconfont{
+  font-size: 36rpx;
+}

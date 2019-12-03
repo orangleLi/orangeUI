@@ -1,0 +1,33 @@
+<view class="classify-wrapper">
+  <view class="classify-section">
+    <scroll-view scroll-x="true" scroll-left="{{scrollLeft}}" scroll-with-animation="true" class="scroll-view">
+      <view class="classify-list" wx:for="{{classify}}"  wx:key="unique" data-index="{{index}}" bindtap="toCategory">
+          <view class="{{index === classifyActiveIndex? 'active' : ''}}">{{item.name || item}}</view>
+          <view class="{{index === classifyActiveIndex? 'rect' : ''}}"></view>
+      </view>
+    </scroll-view>
+
+    <view class="icon_arrdown" bindtap="transClassifyModal">
+      <image src="/resources/images/icon_arrdown.png"></image>
+    </view>
+  </view>
+  
+  <!-- 全部分类 -->
+  <view class="classifyModal" wx:if="{{classifyModalShow}}" wx:key="{{index}}">
+    <view class="mask" bindtap="transClassifyModal"></view>
+    <view class="classifyModal-wrapper">
+      <view class="title">
+        <text>全部类目</text>
+        <image class="bottom" bindtap="transClassifyModal" src="/resources/images/icon_arrup.png"></image>
+      </view>
+      <view class="classify-list">
+        <view class="classify-item" wx:for="{{classify}}" wx:key="{{index}}">
+          <view data-index="{{index}}" bindtap="clickClassify" class="{{classifyActiveIndex === index ?'info active': 'info'}}">{{item.name||item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+
+  <text>{{selectMsg}}</text>
+</view>

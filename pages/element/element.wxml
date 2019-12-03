@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="element-bar">
+  <view class="fun-box bg-brown" style="--second: 2;" data-url="./icon/icon" bindtap="navTo">
+    <view>图标</view>
+    <view>Icon</view>
+  </view>
+
+  <view class="fun-box bg-purple" style="--second: 2.2;" data-url="./btn/btn" bindtap="navTo">
+    <view>按钮</view>
+    <view>Button</view>
+  </view>
+
+  <view class="fun-box bg-olive" style="--second: 2.2;" data-url="./list/list" bindtap="navTo">
+    <view>列表</view>
+    <view>List</view>
+  </view>
+
+  <view class="fun-box bg-pink" style="--second: 2.4;" data-url="./footerDivider/footerDivider" bindtap="navTo">
+    <view>分割线</view><!-- 级联选择 -->
+    <view>footerDivider</view>
+  </view>
+
+  <view class="fun-box bg-grey" style="--second: 2.4;" data-url="./goodsCard/goodsCard" bindtap="navTo">
+    <view>商品卡片</view>
+    <view>Card</view>
+  </view>
+
+  <view class="fun-box bg-green" style="--second: 2.4;" data-url="./resultPage/success/success" bindtap="navTo">
+    <view>结果页-成功</view>
+    <view>Success</view>
+  </view>
+
+  <view class="fun-box bg-red" style="--second: 2.4;" data-url="./resultPage/fail/fail" bindtap="navTo">
+    <view>结果页-失败</view>
+    <view>Fail</view>
+  </view>
+  <!--文本截断 搜索栏 数字框 开关 滑动条slider 文件上传 手风琴折叠框 吸顶 头像 弹出菜单 遮罩层 公告  倒计时（翻牌儿）-->
+</view>

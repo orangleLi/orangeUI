@@ -1,0 +1,8 @@
+<view class="mask"></view>
+<view class="settingGroup">
+  <text>授权</text>
+  <view class="btnGroup">
+    <button>取消</button>
+    <button open-type="openSetting" bindtap="toAuthorizeClick">去授权</button>
+  </view>
+</view>

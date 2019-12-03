@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "notice-bar": "../../../components/noticeBar/noticeBar"
+  }
+}

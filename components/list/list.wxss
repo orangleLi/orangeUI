@@ -1,0 +1,30 @@
+/* components/list/list.wxss */
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  height: 45px;
+  border-bottom: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.left, .right{
+  display: flex;
+  align-items: center;
+}
+.left image{
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 8px;
+}
+.right image{
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+.info{
+  margin-right: 10px;
+}

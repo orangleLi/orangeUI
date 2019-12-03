@@ -1,0 +1,33 @@
+/* pages/Slide/slide.wxss */
+.main{
+  display: flex;
+  border: 1rpx solid #eee;
+  font-size: 30rpx;
+}
+.slide{
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  padding-left: 50rpx;
+  color: rgb(51, 51, 51);
+  transform: translateX(112rpx);
+  -webkit-transform: translateX(112rpx);
+  margin-left: -112rpx;
+  transition: all 0.4s;
+}
+.delete{
+  background-color: #ff4400;
+  width: 112rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  color: #fff;
+  transform: translateX(112rpx);
+  -webkit-transform: translateX(112rpx);
+  transition: all 0.4s;
+}
+
+.touch-move{
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}

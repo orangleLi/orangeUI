@@ -1,0 +1,15 @@
+<view class="goods-card" bindtap="toGoodsDetail">
+  <view class="image-box">
+    <image wx:if="{{tagIsImage}}" class="tag img" src="{{tag}}"></image>
+    <text wx:elif="{{tag.length>0}}" class="tag text">{{tag}}</text>
+    <image class="goods-img" src="{{src}}"></image>
+  </view>
+  <view class="goods-info">
+    <view class="title">{{title}}</view>
+    <view class="sub-title">{{subTitle}}</view>
+    <view class="price-number">
+      <text class="price">{{price}}</text>
+      <text class="number">{{number}}</text>
+    </view>
+  </view>
+</view>

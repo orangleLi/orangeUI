@@ -1,0 +1,110 @@
+/* pages/myOrder/myOrder.wxss */
+@import "/resources/wxss/common.wxss";
+Page{
+  background-color: #eee;
+}
+.title{
+  text-align: center;
+  display: flex;
+  /* height: 74rpx; */
+  line-height: 68rpx;
+  font-size: 28rpx;
+  border-top: 1rpx solid rgb(238, 238, 238);
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1001; */
+}
+.title .titleList{
+  width: 50%;
+  text-align: center;
+}
+.activeRect{
+  width: 40rpx;
+  height: 6rpx;
+  border-radius: 3rpx;
+  background: rgb(255, 92, 31);
+  margin: 0 auto;
+}
+
+.dataList{
+  margin: 30rpx;
+  /* margin-top: 104rpx; */
+}
+.listItem{
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  border-radius: 15rpx;
+}
+.listItem:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.listItem .orderInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.listItem .orderNum{
+  font-size: 30rpx;
+}
+.listItem .orderStatus{
+  font-size: 26rpx;
+}
+.listItem .orderTime{
+  margin-top: 10rpx;
+}
+.imgList{
+  margin-top: 26rpx;
+  display: flex;
+  overflow-x: scroll;
+  height: 160rpx;
+}
+.imgList .imgItem{
+  width: 160rpx;
+  height: 160rpx;
+  background-color: rgb(226, 226, 226);
+  margin-right: 20rpx;
+  flex: none;
+  border-radius: 10rpx;
+}
+.imgList .imgItem:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.listItem .orderBtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.orderBtn .btnGroup{
+  display: flex;
+}
+.orderBtn .btnGroup button{
+   width: 152rpx;
+   height: 50rpx;
+   line-height: 50rpx;
+   margin: 0;
+   padding: 0;
+   border-radius: 25rpx;
+   border: 1rpx solid rgb(255, 92, 31);
+   margin-left: 30rpx;
+}
+
+.goodsItem{
+  margin-top: 26rpx;
+}
+.goodsItem .mainImg{
+  border-radius: 10rpx;
+}
+.goodsempty{
+  width: auto;
+  margin: 50rpx 0;
+}
+
+/* .moveAni{} */
+
+swiper{
+  height: 100%;
+}
+swiper-item{
+  position: static;
+}

@@ -1,0 +1,50 @@
+.input-area{
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+  overflow: hidden;
+  border: 1px solid #f3f3f3;
+}
+
+
+.input-area-H{
+ display: flex;
+ align-items: flex-end;
+}
+.input-tilte{
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 190rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.input-con{
+  display: inline-block;
+  width:440rpx; 
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #333333;
+}
+.input-con input{
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: right;
+}
+.input-con_local{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #ff6117
+}
+.input-con_local .activityAddress-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.input-con .icon_local{
+  display: block;
+  width: 17rpx;
+  margin-left: 10rpx;
+}

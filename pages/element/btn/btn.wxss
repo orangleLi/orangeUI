@@ -1,0 +1,20 @@
+/* pages/element/btn/btn.wxss */
+.iconfontRight .iconfont{
+  margin-right: 8rpx;
+}
+.btn-wrapper{
+  padding: 30rpx 15rpx;
+}
+.btn-item{
+  margin-bottom: 30rpx;
+}
+.small-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.small-btn .btn-item{
+  width: 25%;
+}
+.title{
+  margin: 15rpx;
+}

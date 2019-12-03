@@ -1,0 +1,12 @@
+<view class="pay-fail">
+  <view>
+    <view class="tac mt180">
+      <icon class="iconfont icon-chenggong"></icon>
+    </view>
+    <view class="size34 tac mt30 color51">支付成功</view>
+    <view class="size28 mt60 pay_text_box tac color51">感谢您购买小区优品，我们会不断提供更多优质价廉的商品，欢迎您再次使用！</view>
+  </view>
+  <view class="payp_btn_box " bindtap="toUser">
+    <view class="payp_btn mtb_auto">返回我的</view>
+  </view>
+</view>

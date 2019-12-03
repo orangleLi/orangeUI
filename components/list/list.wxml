@@ -1,0 +1,12 @@
+<view class="list-item">
+  <view class="left">
+    <image wx:if="{{icon}}" src="{{icon}}"/>
+    <slot name="icon"></slot>
+    <text class="title">{{title}}</text>
+  </view>
+  <view class="right" bindtap="navTo">
+    <slot name="fun"></slot>
+    <view class="info">{{desc}}</view>
+    <image src="{{src}}"/>
+  </view>
+</view>

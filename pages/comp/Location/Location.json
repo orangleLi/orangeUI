@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "authorize-modal": "../../../components/authorizeModal/authorizeModal"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,34 @@
+/* pages/comp/progressBar/progressBar.wxss */
+.title{
+  margin: 30rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.progressBar{
+  margin: 30rpx;
+}
+.progress-box{
+  width: 600rpx;
+  height: 40rpx;
+  position: relative;
+  background: #ccc;
+  border-radius: 35rpx;
+}
+.progress{
+  position: absolute;
+  height: 100%;
+  line-height: 100%;
+  background: #ff5b1f;
+  border-radius: 35rpx;
+  color: #fff;
+  text-align: right;
+}
+.percentage{
+  margin: 0 15rpx;
+  font-size: 22rpx;
+}
+
+.progress-outside{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,5 @@
+/* pages/element/noticeBar/noticeBar.wxss */
+notice-bar{
+  margin-bottom: 30rpx;
+  display: flex;
+}

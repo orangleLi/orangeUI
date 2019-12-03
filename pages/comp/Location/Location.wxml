@@ -1,0 +1,12 @@
+<view class='input-area input-area-H'>
+  <view class='input-tilte'>
+    <text>位置</text>
+  </view>
+  <view class='input-con input-con_local' bindtap='onChangeAddress'>
+    <input type='text' placeholder="定位中" name='activityAddress' value='{{activityAddress}}' style='display:none'/>
+    <text class='activityAddress-text'>{{activityAddress}}</text>
+    <image src='/resources/images/icon_local.png' mode='widthFix' class='icon_local'></image>
+  </view>
+</view>
+<input></input>
+<authorize-modal wx:if="{{!hiddenAuthorizeModal}}" bindtoAuthorizeClick="toAuthorizeClick"></authorize-modal>

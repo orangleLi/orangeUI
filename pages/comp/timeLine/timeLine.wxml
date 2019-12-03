@@ -1,0 +1,36 @@
+<!--pages/comp/timeLine/timeLine.wxml-->
+<text class="time-line-title">实心圆点</text>
+<view class="logistics-content">
+  <view class="logistics-item {{index!==logisticsList.length-1?'line':''}}" wx:for="{{logisticsList}}" wx:key="index">
+    <view class="circle {{index===0?'themeColorBg':''}}"></view>
+    <view class="logisticsInfo {{index===0?'themeColor':''}}">
+      <view>{{item.info}}</view>
+      <view class="date">{{item.date}}</view>
+    </view>
+  </view>
+</view>
+
+<text class="time-line-title">空心圆点</text>
+<view class="logistics-content">
+  <view class="logistics-item {{index!==logisticsList.length-1?'line':''}}" wx:for="{{logisticsList}}" wx:key="index">
+    <view class="hollowCircle {{index===0?'themeHollowCricle':''}}"></view>
+    <view class="logisticsInfo {{index===0?'themeColor':''}}">
+      <view>{{item.info}}</view>
+      <view class="date">{{item.date}}</view>
+    </view>
+  </view>
+</view>
+
+<text class="time-line-title">卡片式</text>
+<view class="logistics-content">
+  <view class="logistics-item {{index!==logisticsList.length-1?'line':''}}" wx:for="{{logisticsList}}" wx:key="index">
+    <view class="circle {{index===0?'themeColorBg':''}}"></view>
+    <view class="logisticsInfo">
+      <view class="timestamp">{{item.date}}</view>
+      <view class="card {{index===0?'themeColor':''}}">
+        <view class="info">{{item.info}}</view>
+        <view class="date">{{item.date}}</view>
+      </view>
+    </view>
+  </view>
+</view>

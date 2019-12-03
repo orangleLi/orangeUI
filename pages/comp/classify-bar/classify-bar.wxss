@@ -1,0 +1,140 @@
+.classify-wrapper{
+		width: 100%;
+}
+/* 分类 */
+.indexPadding{
+  padding: 25rpx 20rpx 118rpx 20rpx;
+}
+.categoryPadding{
+  padding: 40rpx 24rpx 30rpx 24rpx;
+}
+.classify-section{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30rpx;
+		box-sizing: border-box;
+		background-color: #000;
+		color: rgb(153, 153, 153);
+		position: relative;
+		white-space: nowrap;
+}
+.scroll-view{
+  height: 62rpx;
+}
+.classify-section .classify-list{
+  display: inline-block;
+  overflow-x: scroll;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 136rpx;
+  height: 100%;
+  min-width: 136rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+}
+.classify-list .rect{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80rpx;
+  height: 5rpx;
+  background-color: #ffcc58;
+}
+.active{
+    color: #ffcc58;
+    display: inline-block;
+}
+.icon_arrdown{
+    margin-left: 20rpx;
+    width: 75rpx;
+    height: 60rpx;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon_arrdown image{
+    width: 18rpx;
+    height: 12rpx;
+    display: block;
+    margin-right: 30rpx;
+}
+
+
+/* 全部分类框 */
+.classifyModal{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99999;
+}
+.classifyModal .mask{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.classifyModal-wrapper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 15rpx 15rpx;
+}
+.classifyModal-wrapper .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30rpx;
+    font-size: 34rpx;
+    color: #666666;
+    border-bottom: 1rpx solid #eee;
+}
+.classifyModal-wrapper .title image{
+  width: 18rpx;
+  height: 12rpx;
+  display: block;
+}
+.classifyModal-wrapper .title .bottom{
+  width: 26rpx;
+  height: 16rpx;
+  display: block;
+}
+.classifyModal-wrapper .classify-list{
+    width: 100%;
+    display: flex;
+    flex-flow:row wrap;
+    padding: 30rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+.classifyModal-wrapper .classify-list .classify-item{
+    width: 25%;
+    padding-right: 30rpx;
+    margin-bottom: 30rpx;
+    text-align: center;
+    box-sizing: border-box;
+}
+.classifyModal-wrapper .classify-list .classify-item:nth-of-type(4n){
+		padding-right: 0;
+}
+.classifyModal-wrapper .classify-list .classify-item .info{
+  background-color: #eeeeee;
+  border-radius: 45rpx;
+  font-size: 26rpx;
+  color: #666666;
+  padding: 10rpx 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.classifyModal-wrapper .classify-list .classify-item .active{
+  background: linear-gradient(to bottom right, #ffcc58 , #ffa200)!important;
+  color: #000000;
+}
+

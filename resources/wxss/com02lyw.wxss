@@ -1,0 +1,83 @@
+
+.pt30 {padding-top: 30rpx;}
+.pb30 {padding-bottom: 30rpx;}
+.pl30 {padding-left: 30rpx;}
+.pr30 {padding-right: 30rpx;}
+.ml10 {margin-left: 10rpx; }
+.mt6 {margin-top: 6rpx; }
+.mt10 {margin-top: 10rpx; }
+.mt20 {margin-top: 20rpx; }
+.mt60 {margin-top: 60rpx; }
+.mt160 {margin-top: 160rpx; }
+.mb30 {margin-bottom: 30rpx; }
+.mtb_auto {margin: 0 auto;}
+.bgfff {background-color: #fff;}
+.c888 {color: #888; }
+.c999 {color: #999; }
+.cff5b1e {color: #ff5b1e;}
+.dwb {display: -webkit-box;}
+
+.fl{float: left;}
+.fr{float: right;}
+.oh{overflow: hidden;}
+.fwbold{font-weight: bold;}
+.tac {text-align: center;}
+.tar {text-align: right;}
+
+.size28{font-size: 28rpx;}
+.size32{font-size: 32rpx;}
+.size34{font-size: 34rpx;}
+.size36{font-size: 36rpx;}
+
+
+.com_bg {background: linear-gradient(to right, #ff5b1f , #ff7200); color: #fff;}
+
+
+.spaceBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ml30{
+  margin-left: 30rpx;
+}
+.mr30{
+  margin-right: 30rpx;
+}
+.pd30{
+  padding: 30rpx;
+}
+.btLine{
+  border-bottom: 1rpx solid #eee;
+}
+.bg247{
+  background-color: rgb(247, 247, 247)
+}
+.radius16{
+  border-radius: 16rpx;
+}
+.radius10{
+  border-radius: 10rpx;
+}
+.mt30{
+  margin-top: 30rpx;
+}
+
+.footer{
+  margin: 80rpx 30rpx 50rpx 30rpx;
+  line-height: 20rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.footer .flex {
+  flex: 1;
+  height: 1px;
+  background: rgb(229, 229, 229);
+  box-sizing: border-box;
+}
+.footer .footerSpan {
+  font-size: 20rpx;
+  color: rgb(170, 170, 170);
+  margin: 0 25rpx;
+}

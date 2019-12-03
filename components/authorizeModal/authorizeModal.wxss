@@ -1,0 +1,35 @@
+/* components/authorizeModal/authorizeModal.wxss */
+
+.mask{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3000;
+}
+.settingGroup{
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 520rpx;
+  z-index: 3001;
+  border-radius: 10rpx;
+  font-size: 40rpx;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 30rpx;
+}
+
+.btnGroup{
+  width: 100%;
+  display: flex;
+  padding-top: 30rpx;
+}
+.btnGroup button{
+  width: 100%;
+  font-size: 34rpx;
+  background-color: #fff;
+}

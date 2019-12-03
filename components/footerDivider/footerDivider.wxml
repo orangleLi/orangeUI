@@ -1,0 +1,6 @@
+<!--components/footerDivider/footerDivider.wxml-->
+<view class="footerDivider">
+  <view class="line"></view>
+  <view class="middle" wx:if="{{!all}}"><slot></slot></view>
+  <view class="line"></view>
+</view>

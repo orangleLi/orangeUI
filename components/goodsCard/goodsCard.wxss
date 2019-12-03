@@ -1,0 +1,85 @@
+.goods-card{
+  display: flex;
+  padding: 30rpx;
+}
+.image-box{
+  position: relative;
+}
+.image-box .tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image-box .tag.text{
+  background: red;
+  padding: 4rpx 15rpx;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 0 30rpx 30rpx 0;
+}
+.image-box .tag.img{
+  width: 48rpx;
+  height: 48rpx;
+  display: block;
+}
+.goods-img{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+}
+.goods-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  position: relative;
+}
+.title{
+  font-size: 30rpx;
+  color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.sub-title{
+  font-size: 24rpx;
+  color:  #333;
+  margin-top: 10rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.price-number{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 486rpx;
+  margin-top: 30rpx;
+}
+.price{
+  font-size: 32rpx;
+  color: #000;
+  font-weight: bold;
+}
+.price::before{
+  content: '￥';
+  font-size: 26rpx;
+}
+.number{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+.number::before{
+  content: 'X';
+  font-size: 20rpx;
+  margin-right: 2px;
+}

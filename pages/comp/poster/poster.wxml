@@ -1,0 +1,7 @@
+
+<view class="item size30 color51" bindtap="toDrawPosterTest">
+  canvas绘制海报 demo1 >>
+</view>
+<view class="item size30 color51" bindtap="toDrawPoster">
+  canvas绘制海报 demo2 >>
+</view>
