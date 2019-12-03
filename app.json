@@ -23,7 +23,8 @@
     "pages/element/goodsCard/goodsCard",
     "pages/element/resultPage/success/success",
     "pages/element/resultPage/fail/fail",
-    "pages/element/noticeBar/noticeBar"
+    "pages/element/noticeBar/noticeBar",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -46,6 +47,12 @@
         "text": "组件",
         "iconPath": "/resources/images/icon_index.png",
         "selectedIconPath": "/resources/images/icon_index_s.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/resources/images/about.png",
+        "selectedIconPath": "/resources/images/about_s.png"
       }
     ]
   },

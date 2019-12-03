@@ -1,0 +1,4 @@
+/* pages/about/about.wxss */
+.middle{
+  text-align: center
+}
