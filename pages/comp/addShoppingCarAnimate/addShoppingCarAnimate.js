@@ -35,7 +35,8 @@ Page({
         "ProductTitle": "商品1",
         "Tag": null,
         "ProductId": "1",
-        "isSelect": false
+        "isSelect": false,
+        "num": 0
       },
       {
         "skuId": "2",
@@ -49,7 +50,8 @@ Page({
         "ProductTitle": "商品2",
         "Tag": null,
         "ProductId": "1",
-        "isSelect": false
+        "isSelect": false,
+        "num": 0
       },
       {
         "skuId": "3",
@@ -63,7 +65,8 @@ Page({
         "ProductTitle": "商品3",
         "Tag": null,
         "ProductId": "1",
-        "isSelect": false
+        "isSelect": false,
+        "num": 0
       }
     ],
     nowSelectData: [],
@@ -85,13 +88,15 @@ Page({
     let index = e.currentTarget.dataset.index;
     let data = that.data.nowShowData[index];
     data.isSelect = true;
-
+    data.num++;
     let nowSelectData = that.data.nowSelectData;
     let tag = 'nowShowData[' + index + '].isSelect';
+    let num = 'nowShowData[' + index + '].num'; 
 
     nowSelectData.push(data);
     that.setData({
       [tag]: true,
+      [num]: data.num,
       nowSelectData: nowSelectData
     });
   },
@@ -196,9 +201,18 @@ Page({
   deleteGoods(e) {
     let that = this;
     let skuId = e.currentTarget.dataset.id;
+
+    let index = e.currentTarget.dataset.index;
+    let data = that.data.nowShowData[index];
+    data.isSelect = true;
+    data.num = data.num < 1 ? 0 : --data.num;
+    let tag = 'nowShowData[' + index + '].isSelect';
+    let num = 'nowShowData[' + index + '].num'; 
+
     // 删除
     let resData = that.deleteDataById(skuId);
     that.setData({
+      [num]: data.num,
       nowSelectData: resData
     });
     if (resData.length === 0) {

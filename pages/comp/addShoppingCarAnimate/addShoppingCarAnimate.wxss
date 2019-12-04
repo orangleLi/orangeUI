@@ -395,13 +395,13 @@ Page{
   background-color: #f4f4f4;
 }
 
-.numGroup{
+/* .numGroup{
   position: absolute;
   right: 0;
   width: 100rpx;
   height: 100rpx;
   justify-content: flex-end;
-}
+} */
 
 
 @keyframes runTop {
@@ -432,4 +432,14 @@ Page{
     left: var(--endLeft);
     opacity: 0;
   }
+}
+
+.num-box{
+  display: flex;
+}
+.num-show{
+  margin: 0 15rpx;
+}
+.hidden{
+  display: none;
 }

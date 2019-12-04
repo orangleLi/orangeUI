@@ -34,11 +34,22 @@
               <text class="price">￥{{item.Price}}</text>
               <text class="originPrice size26">{{item.originalPrice}}</text>
             </view>
-            <view wx:if="{{item.isSelect}}" class="numGroup" bindtap="deleteGoods" data-id="{{item.skuId}}" data-index="{{index}}">
+            <!-- <view wx:if="{{item.isSelect}}" class="numGroup" bindtap="deleteGoods" data-id="{{item.skuId}}" data-index="{{index}}">
               <image class="icon" src="/resources/images/icon_c_red.png"></image>
             </view>
             <view wx:else class="numGroup" bindtap="selectGoods" data-id="{{item.skuId}}" data-index="{{index}}">
               <image class="icon" src="/resources/images/icon_add01.png"></image>
+            </view> -->
+            <view class="num-box">
+              <view class="numGroup {{item.num>0?'':'hidden'}}" bindtap="deleteGoods" data-id="{{item.skuId}}" data-index="{{index}}">
+                <image class="icon" src="/resources/images/icon_c_red.png"></image>
+              </view>
+              <view class="numGroup num-show {{item.num>0?'':'hidden'}}">
+                <text>{{item.num}}</text>
+              </view>
+              <view class="numGroup" bindtap="selectGoods" data-id="{{item.skuId}}" data-index="{{index}}">
+                <image class="icon" src="/resources/images/icon_add01.png"></image>
+              </view>
             </view>
           </view>
         </view>
