@@ -254,6 +254,7 @@ canvasDraw.prototype = {
         this.ctx.fillText(newtr, x, y); //绘制截取部分
         if (row === maxRow) {
           this.ctx.restore()//恢复之前保存的绘图上下文
+          y += (fontSize + 5);
           this.nowHeight = this.getRpx(y);
           return this;
         }

@@ -40,6 +40,7 @@
 
 进度条
  
+![](https://orangleli.github.io/imagesResources/orangeUI.jpg)
 
 页面风格样式参考了
 [ColorUI](https://github.com/weilanwl/ColorUI)
