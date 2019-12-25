@@ -1,23 +1,20 @@
 <view class="activityOrder-wrapper">
   <view class="title bg" id="title">
-    <view class="titleList {{nowActive===0? 'active':''}}" data-curr="0" bindtap="switchTagClick">
-      <text>订单列表</text>
-      <view class="{{nowActive===0? 'activeRect':''}}"></view>
-    </view>
-    <view class="titleList {{nowActive===0? '':'active'}}" data-curr="1" bindtap="switchTagClick">
-      <text>售后单列表</text>
-      <view class="{{nowActive===0? '':'activeRect'}}"></view>
+    <view class="titleList {{nowActive===index? 'active':''}}" style="width: {{100/tabArr.length}}%;" wx:for="{{tabArr}}" wx:key="{{index}}" data-curr="{{index}}" bindtap="switchTagClick">
+      <text>{{item}}</text>
+      <view class="{{nowActive===index? 'activeRect':''}}"></view>
     </view>
   </view>
 
   
     <swiper style="height: {{height}}px;" bindchange="switchTag" current="{{nowActive}}">
+      <!-- <block wx:for="{{tabList}}" wx:key="{{idx}}" wx:for-item="list" wx:for-index="idx"> -->
       <block>
         <swiper-item>       
             <scroll-view style="height: {{height}}px;" bindscrolltolower="lower" scroll-y="true">
           <!-- 订单列表 -->
               <view class="dataList moveAni {{nowActive===0? '':''}}" animation="{{animationData}}">
-                <view wx:for="{{showData}}" wx:key="unique" class="listItem bg" data-id="{{item.orderId}}" bindtap="toOrderDetail">
+                <view wx:for="{{tabList[nowActive]}}" wx:key="{{index}}" class="listItem bg" data-id="{{item.orderId}}" bindtap="toOrderDetail">
                   <view class="orderInfo">
                     <text class="orderNum color51 blod">{{item.orderNo}}</text>
                     <text class="orderStatus size26 color153 {{item.orderStatus==='待付款'||item.orderStatus==='待发货'||item.orderStatus==='待收货'?'active':''}}">{{item.orderStatus}}</text>
@@ -46,8 +43,49 @@
       <block>
         <swiper-item>
             <scroll-view style="height: {{height}}px;" bindscrolltolower="lower" scroll-y="true">
-              <view class="dataList {{nowActive===0? '':''}}" animation="{{animationDataSaled}}">
-                <view wx:for="{{saledOrderData}}" wx:key="unique" class="listItem bg" data-rnum="{{item.RefundOrderNum}}" catchtap="showSchedule">
+              <view class="dataList {{nowActive===1? '':''}}" animation="{{animationDataSaled}}">
+                <view wx:for="{{tabList[nowActive]}}" wx:key="unique" class="listItem bg" data-rnum="{{item.RefundOrderNum}}" catchtap="showSchedule">
+                  <view class="orderInfo">
+                    <text class="orderNum color51 bold">{{item.RefundOrderNum}}</text>
+                    <text class="orderStatus size26 color153">{{item.Status}}</text>
+                  </view>
+                  <view class="orderTime size26 color153">{{item.Time}}</view>
+                  
+                  <view class="goodsItem">
+                    <image class="mainImg" src="{{item.Pics}}"></image>
+                    <view class="goodsInfo">
+                      <text class='goodsTitle'>{{item.Title}}</text>
+                      <view class="price-num">
+                        <view class="priceGroup">
+                          <text class="largePrice">￥{{item.UnitPrice}}</text>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  
+
+
+                  <view class="orderBtn">
+                    <text class="salesPrice size26 color51">申请数量：{{item.RefundQty}}</text>
+                    <view class="btnGroup">
+                      <text class="salesPrice size26 color51">售后金额：{{item.RefundPrice}}元</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+
+              <view class="goodsempty {{nowActive===1 && (saledOrderData.length===0 || saledIsFinished) ?'':'dpnone'}}">
+                <image src="/resources/images/none.png"></image>
+                <text class="size30 color153">没有了喔~</text>
+              </view>
+            </scroll-view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+            <scroll-view style="height: {{height}}px;" bindscrolltolower="lower" scroll-y="true">
+              <view class="dataList {{nowActive===2? '':''}}" animation="{{animationDataSaled}}">
+                <view wx:for="{{tabList[nowActive]}}" wx:key="unique" class="listItem bg" data-rnum="{{item.RefundOrderNum}}" catchtap="showSchedule">
                   <view class="orderInfo">
                     <text class="orderNum color51 bold">{{item.RefundOrderNum}}</text>
                     <text class="orderStatus size26 color153">{{item.Status}}</text>

@@ -6,18 +6,13 @@
     </view>
 
     <view class="fun-box bg-orange" style="--second: 1.2;" data-url="./classify-bar/classify-bar" bindtap="navTo">
-      <view>分类导航</view>
-      <view>classifyNav</view>
+      <view>导航</view>
+      <view>Nav</view>
     </view>
 
-    <view class="fun-box bg-pink" style="--second: 1.2;" data-url="./Location/Location" bindtap="navTo">
+    <view class="fun-box bg-green" style="--second: 1.2;" data-url="./Location/Location" bindtap="navTo">
       <view>地图定位</view>
       <view>Map</view>
-    </view>
-
-    <view class="fun-box bg-olive" style="--second: 1.4;" data-url="./timeLine/timeLine" bindtap="navTo">
-      <view>时间轴</view>
-      <view>Timeline</view>
     </view>
 
     <view class="fun-box bg-cyan" style="--second: 1.6;" data-url="./pictureCompression/pictureCompression" bindtap="navTo">
@@ -35,24 +30,26 @@
       <view>SlideDelete</view>
     </view>
 
-    <view class="fun-box bg-green" style="--second: 2.2;" data-url="./addShoppingCarAnimate/addShoppingCarAnimate" bindtap="navTo">
+    <view class="fun-box bg-pink" style="--second: 2.2;" data-url="./addShoppingCarAnimate/addShoppingCarAnimate" bindtap="navTo">
       <view>购物车动画</view>
       <view>Cart</view>
     </view>
 
-    <view class="fun-box bg-purple" style="--second: 2.6;" data-url="./initialQuery/initialQuery" bindtap="navTo">
+    <view class="fun-box bg-olive" style="--second: 2.6;" data-url="./initialQuery/initialQuery" bindtap="navTo">
       <view>通讯录字母查询</view>
       <view>InitialQuery</view>
+    </view>
+
+    <view class="fun-box bg-grey" style="--second: 3.4;" data-url="./poster/poster" bindtap="navTo">
+      <view>绘制海报</view>
+      <view>Poster</view>
     </view>
 
     <view class="fun-box bg-blue" style="--second: 3.2;" data-url="./cascader/cascader" bindtap="navTo">
       <view>级联选择</view>
       <view>Cascader</view>
     </view>
-    <view class="fun-box bg-grey" style="--second: 3.4;" data-url="./poster/poster" bindtap="navTo">
-      <view>绘制海报</view>
-      <view>Poster</view>
-    </view>
+
     <view class="fun-box bg-pink" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
       <view>进度条</view>
       <view>ProgressBar</view>

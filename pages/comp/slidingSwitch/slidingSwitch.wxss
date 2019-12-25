@@ -10,13 +10,10 @@ Page{
   line-height: 68rpx;
   font-size: 28rpx;
   border-top: 1rpx solid rgb(238, 238, 238);
-  /* position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1001; */
+  overflow: scroll;
 }
 .title .titleList{
-  width: 50%;
+  min-width: 200rpx;
   text-align: center;
 }
 .activeRect{

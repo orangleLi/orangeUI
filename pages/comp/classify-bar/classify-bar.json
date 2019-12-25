@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "nav": "../../../components/classify-bar/classify-bar"
+  }
 }

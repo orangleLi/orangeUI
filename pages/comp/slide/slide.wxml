@@ -1,7 +1,8 @@
 <!--pages/Slide/slide.wxml-->
-<view class="main">
-  <view class="slide {{active?'touch-move':''}}" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
-    展示信息 - 左滑右滑事件
+<view class="main" wx:for="{{list}}" wx:key="{{index}}">
+  <view class="slide {{active === index?'touch-move':''}}" data-index="{{index}}" 
+  bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    {{item.content}}
   </view>
-  <view class="delete {{active?'touch-move':''}}">删除</view> 
+  <view class="delete {{active === index?'touch-move':''}}" data-index="{{index}}" bindtap="deleteItem">删除</view> 
 </view>

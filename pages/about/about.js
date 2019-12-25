@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    github: 'https://github.com/orangleLi/orangeUI'
   },
 
   /**
@@ -14,7 +14,17 @@ Page({
   onLoad: function (options) {
 
   },
-
+  copy () {
+    var that = this;
+    wx.setClipboardData({
+      data: that.data.github,
+      success: function (res) {
+        wx.showToast({
+          title: '欢迎star哦！'
+        });
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

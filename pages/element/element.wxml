@@ -34,5 +34,10 @@
     <view>结果页-失败</view>
     <view>Fail</view>
   </view>
+
+  <view class="fun-box bg-olive" style="--second: 1.4;" data-url="./timeLine/timeLine" bindtap="navTo">
+    <view>时间轴</view>
+    <view>Timeline</view>
+  </view>
   <!--文本截断 搜索栏 数字框 开关 滑动条slider 文件上传 手风琴折叠框 吸顶 头像 弹出菜单 遮罩层 公告  倒计时（翻牌儿）-->
 </view>

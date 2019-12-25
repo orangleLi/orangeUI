@@ -1,20 +1,11 @@
 <!--pages/comp/swiper/swiper.wxml-->
 <view class="swiper-wrapper">
   <view class="title">普通轮播图</view>
-  <swiper indicator-dots="{{indicatorDots}}"
-    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" style=" width: 100%;height:{{imgheight}}px;">
-    <block wx:for="{{imgUrls}}" wx:key="unique">
-      <swiper-item>
-        <image bindload="imageLoad" style=" width: 100%;height:{{imgheight}}px;" mode='widthFix' src="{{item}}" class="slide-image"/>
-      </swiper-item>
-    </block>
-  </swiper>
+  <swiper-normal imgUrls="{{imgUrls}}" indicatorDots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bind:swiperChange="swiperChange"></swiper-normal>
+  
   <view class="swiper-card">
     <view class="title">卡片式轮播图</view>
-    <swiper class="carousel" circular interval="{{2000}}" duration="{{800}}" bindchange="swiperChange">
-      <swiper-item class="carousel-item" wx:for="{{imgUrls}}" wx:key="unique">
-        <image src="{{item}}" class="{{index===swiperCurrent?'':'noActive'}}"></image>
-      </swiper-item>
-    </swiper>
+    <swiper-card imgUrls="{{imgUrls}}" circular interval="{{2000}}" duration="{{800}}" bind:swiperChange="change"></swiper-card>
   </view>
 </view>

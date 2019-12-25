@@ -7,72 +7,92 @@ Page({
   data: {
     nowActive: 0,
     height: 0,
-    showData: [
-      {
-        "activityId": "1",
-        "ImageUrl": [
-          ""
-        ],
-        "orderId": "11111",
-        "orderNo": "PO20190802123456",
-        "orderStatus": "已完成",
-        "NotifyReceive": 0,
-        "time": "2019-07-22 14:32:16",
-        "productKindNums": 1
-      },
-      {
-        "activityId": "1",
-        "ImageUrl": [
-          ""
-        ],
-        "orderId": "11111",
-        "orderNo": "PO20190802123456",
-        "orderStatus": "已完成",
-        "NotifyReceive": 0,
-        "time": "2019-07-22 14:32:16",
-        "productKindNums": 1
-      },
-      {
-        "activityId": "1",
-        "ImageUrl": [
-          ""
-        ],
-        "orderId": "11111",
-        "orderNo": "PO20190802123456",
-        "orderStatus": "已完成",
-        "NotifyReceive": 0,
-        "time": "2019-07-22 14:32:16",
-        "productKindNums": 1
-      },
-      {
-        "activityId": "1",
-        "ImageUrl": [
-          ""
-        ],
-        "orderId": "11111",
-        "orderNo": "PO20190802123456",
-        "orderStatus": "已完成",
-        "NotifyReceive": 0,
-        "time": "2019-07-22 14:32:16",
-        "productKindNums": 1
-      },
-    ],
-    saledOrderData: [
-      {
-        "Id": "1",
-        "Title": "测试商品0.01",
-        "RefundType": "RefundMoney",
-        "OrderType": 0,
-        "Pics": "",
-        "UnitPrice": "0.01",
-        "RefundQty": "1",
-        "Status": "待审核",
-        "Props": "",
-        "RefundOrderNum": "TH20190802123456",
-        "Time": "2019-07-30 11:20:16",
-        "RefundPrice": "0.01",
-        "OriginalPrice": "0.01"
-      }
+    tabArr: ['订单列表', '售后单列表', '售后单列表1'],
+    tabList: [
+      [
+        {
+          "activityId": "1",
+          "ImageUrl": [
+            ""
+          ],
+          "orderId": "11111",
+          "orderNo": "PO20190802123456",
+          "orderStatus": "已完成",
+          "NotifyReceive": 0,
+          "time": "2019-07-22 14:32:16",
+          "productKindNums": 1
+        },
+        {
+          "activityId": "1",
+          "ImageUrl": [
+            ""
+          ],
+          "orderId": "11111",
+          "orderNo": "PO20190802123456",
+          "orderStatus": "已完成",
+          "NotifyReceive": 0,
+          "time": "2019-07-22 14:32:16",
+          "productKindNums": 1
+        },
+        {
+          "activityId": "1",
+          "ImageUrl": [
+            ""
+          ],
+          "orderId": "11111",
+          "orderNo": "PO20190802123456",
+          "orderStatus": "已完成",
+          "NotifyReceive": 0,
+          "time": "2019-07-22 14:32:16",
+          "productKindNums": 1
+        },
+        {
+          "activityId": "1",
+          "ImageUrl": [
+            ""
+          ],
+          "orderId": "11111",
+          "orderNo": "PO20190802123456",
+          "orderStatus": "已完成",
+          "NotifyReceive": 0,
+          "time": "2019-07-22 14:32:16",
+          "productKindNums": 1
+        },
+      ],
+      [
+        {
+          "Id": "1",
+          "Title": "测试商品0.01",
+          "RefundType": "RefundMoney",
+          "OrderType": 0,
+          "Pics": "",
+          "UnitPrice": "0.01",
+          "RefundQty": "1",
+          "Status": "待审核",
+          "Props": "",
+          "RefundOrderNum": "TH20190802123456",
+          "Time": "2019-07-30 11:20:16",
+          "RefundPrice": "0.01",
+          "OriginalPrice": "0.01"
+        }
+      ],
+      [
+        {
+          "Id": "1",
+          "Title": "测试商品0.01",
+          "RefundType": "RefundMoney",
+          "OrderType": 0,
+          "Pics": "",
+          "UnitPrice": "0.01",
+          "RefundQty": "1",
+          "Status": "待审核",
+          "Props": "",
+          "RefundOrderNum": "TH20190802123456",
+          "Time": "2019-07-30 11:20:16",
+          "RefundPrice": "0.01",
+          "OriginalPrice": "0.01"
+        }
+      ]
     ]
 
 

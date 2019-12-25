@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    active: false
+    active: -1,
+    list: [
+      {
+        content: '展示信息 - 滑动删除事件1'
+      },
+      {
+        content: '展示信息 - 滑动删除事件2'
+      },
+      {
+        content: '展示信息 - 滑动删除事件3'
+      }
+    ]
   },
 
   /**
@@ -32,13 +43,22 @@ Page({
     if (Math.abs(angle) > 30) return;
     if (that.data.endX > that.data.startX) {
       this.setData({
-        active: false
+        active: -1
       })
     } else {
       this.setData({
-        active: true
+        active: e.currentTarget.dataset.index
       })
     }
+  },
+  deleteItem: function(e) {
+    const index = e.currentTarget.dataset.index;
+    let data = this.data.list;
+    data.splice(index, 1);
+    this.setData({
+      list: data,
+      active: -1
+    })
   },
   /**
   * 计算滑动角度

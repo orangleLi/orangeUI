@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "swiper-normal": "../../../components/swiper/swiper",
+    "swiper-card": "../../../components/swiper-card/swiper-card"
+  }
 }

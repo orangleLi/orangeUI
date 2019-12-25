@@ -1,0 +1,5 @@
+<swiper class="carousel" indicator-dots="{{indicatorDots}}"  circular="{{circular}}" autoplay="{{autoplay}}" interval="{{2000}}" duration="{{800}}" bindchange="swiperChange">
+  <swiper-item class="carousel-item" wx:for="{{imgUrls}}" wx:key="unique">
+    <image src="{{item}}" class="{{index===swiperCurrent?'':'noActive'}}"></image>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,29 @@
+/* components/swiper-card/swiper-card.wxss */
+.slide-image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carousel {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+.carousel-item {
+  width: 70% !important;
+  padding: 0;
+  left: 15%;
+}
+.carousel-item image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.noActive {
+  transform: scale(0.85);
+}

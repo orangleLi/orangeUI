@@ -1,0 +1,22 @@
+<!-- <image style="width: 100%;" src='{{endImg}}' mode='widthFix'></image> -->
+<view class="mask {{showQRShareModal&&isFinished? '' : 'dphone'}}"></view>
+<view class="main {{showQRShareModal&&isFinished? '' : 'offScreen'}}" style="transform: translateY(-{{height > 1800 ? 5:20}}%);">
+  <canvas style="width:{{width}}px;height:{{height}}px;" class="shareCanvas offScreen" canvas-id="shareImg"></canvas>
+  <canvas style="width:{{width}}px;height:{{height}}px;" class="shareCanvas offScreen" canvas-id="bgImg"></canvas>
+  <image data-h="{{height}}" id="showImg" class="endImg {{showQRShareModal&&isFinished? '' : 'dphone'}}" style="" src='{{endImg}}' mode='widthFix' bindtap="saveImg"></image>
+  <image class="bgRect {{showQRShareModal&&isFinished? '' : 'dphone'}}" src="/resources/images/rect.png"></image>
+  <image id="saveImg" class="saveBtn {{showQRShareModal&&isFinished? '' : 'dphone'}}" src="/resources/images/saveImg.png" bindtap="saveImg"></image>
+</view>
+<image class="closeShare {{showQRShareModal&&isFinished? '' : 'dphone'}}" src="/resources/images/closeShare.png" bindtap="closeShareModal"></image>
+
+<view class="modal" wx:if="{{openSetting}}">
+  <view class="mask" bindtap="cancelSet"></view>
+  <view class="box">
+    <view class="title">提示</view>
+    <view class="content">未授权</view>
+    <view class="btn-box">
+      <button catchtap="cancelSet">取消</button>
+      <button class="confirm" open-type="openSetting" catchtap="cancelSet">去授权</button>
+    </view>
+  </view>
+</view>

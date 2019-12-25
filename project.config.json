@@ -135,6 +135,27 @@
 					"id": -1,
 					"name": "addShoppingCarAnimate",
 					"pathName": "pages/comp/addShoppingCarAnimate/addShoppingCarAnimate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "slidingSwitch",
+					"pathName": "pages/comp/slidingSwitch/slidingSwitch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "swiper",
+					"pathName": "pages/comp/swiper/swiper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "classify-bar",
+					"pathName": "pages/comp/classify-bar/classify-bar",
 					"scene": null
 				}
 			]

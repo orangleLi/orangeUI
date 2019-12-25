@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/element/element",
     "pages/comp/comp",
+    "pages/element/element",
     "pages/element/icon/icon",
     "pages/element/btn/btn",
     "pages/comp/swiper/swiper",
@@ -15,9 +15,9 @@
     "pages/comp/poster/poster",
     "pages/comp/poster/drawPoster/drawPoster",
     "pages/comp/poster/drawPosterTest/drawPosterTest",
-    "pages/comp/timeLine/timeLine",
     "pages/comp/progressBar/progressBar",
     "pages/comp/cascader/cascader",
+    "pages/element/timeLine/timeLine",
     "pages/element/footerDivider/footerDivider",
     "pages/element/list/list",
     "pages/element/goodsCard/goodsCard",

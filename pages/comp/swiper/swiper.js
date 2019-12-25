@@ -10,10 +10,7 @@ Page({
     circular: true,
     interval: 3000,
     duration: 1000,
-    imageWidth: 375,
-    imgheight: 300,
-    imgUrls: ['/resources/images/i.jpg', '/resources/images/y.jpg', '/resources/images/z.png'],
-    swiperCurrent: 0
+    imgUrls: ['/resources/images/i.jpg', '/resources/images/y.jpg', '/resources/images/z.png']
   },
 
   /**
@@ -22,22 +19,11 @@ Page({
   onLoad: function (options) {
 
   }, 
-  imageLoad(e) {
-    let pixelRatio = wx.getSystemInfoSync().pixelRatio;
-    console.log(wx.getSystemInfoSync().windowWidth)
-    let w = wx.getSystemInfoSync().windowWidth - (30 * 2 / pixelRatio);
-
-    var $width = e.detail.width; //获取图片真实宽度
-    var $height = e.detail.height; //获取图片真实高度
-    this.setData({
-      imageWidth: w,
-      imgheight: w / $width * $height
-    })
-  },
   swiperChange(e) {
-    this.setData({
-      swiperCurrent: e.detail.current
-    })
+    console.log("swiperCurrent: " + e.detail)
+  },
+  change(e) {
+    console.log(e)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

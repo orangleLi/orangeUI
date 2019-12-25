@@ -1,0 +1,8 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}"  bindchange="swiperChange" style=" width: 100%;height:{{imgheight}}px;">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image bindload="imageLoad" style=" width: 100%;height:{{imgheight}}px;" mode='widthFix' src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>

@@ -1,7 +1,7 @@
 /* pages/Slide/slide.wxss */
 .main{
   display: flex;
-  border: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
   font-size: 30rpx;
 }
 .slide{
