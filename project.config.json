@@ -156,6 +156,13 @@
 					"id": -1,
 					"name": "classify-bar",
 					"pathName": "pages/comp/classify-bar/classify-bar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "slide",
+					"pathName": "pages/comp/slide/slide",
 					"scene": null
 				}
 			]

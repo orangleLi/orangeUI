@@ -1,0 +1,10 @@
+<!--components/slide/slide.wxml-->
+<view class="main">
+  <view class="slide {{active?'touch-move':''}}"
+  bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    <slot name="info"></slot>
+  </view>
+  <view class="delete {{active?'touch-move':''}}" bindtap="deleteItem">
+    <slot name="opera"></slot>
+  </view> 
+</view>
