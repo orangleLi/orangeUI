@@ -47,7 +47,7 @@
  
 7. 结果页（成功/失败）
  
- 
+自定义组件放在引入components文件夹下
 
 页面风格样式参考了
 [ColorUI](https://github.com/weilanwl/ColorUI)
