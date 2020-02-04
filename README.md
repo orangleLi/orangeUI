@@ -49,5 +49,7 @@
  
 自定义组件放在引入components文件夹下
 
+使用示例在pages文件夹下
+
 页面风格样式参考了
 [ColorUI](https://github.com/weilanwl/ColorUI)
