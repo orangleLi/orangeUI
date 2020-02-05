@@ -7,13 +7,13 @@
     <view slot="opera">删除</view>
   </slide-delete>
 </view>
-<slide-delete bind:deleteItem="deleteItem" data-index="{{index}}">
+<slide-delete bind:deleteItem="clickItem">
   <view slot="info">
     <i class="iconfont icon-aixin"></i>
     滑动删除-删除图标
   </view>   
   <view slot="opera">
-    <i class="iconfont icon-shanchu"></i>
-    删除
+    <i class="iconfont icon-huiyuan"></i>
+    Click
   </view>
 </slide-delete>

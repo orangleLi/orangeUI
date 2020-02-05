@@ -21,25 +21,20 @@ Component({
    */
   methods: {
     touchstart: function (e) {
-      this.setData({
-        startX: e.changedTouches[0].clientX,
-        startY: e.changedTouches[0].clientY
-      })
+      this.startX = e.changedTouches[0].clientX;
+      this.startY = e.changedTouches[0].clientY;
     },
     touchmove: function (e) {
-      this.setData({
-        endX: e.changedTouches[0].clientX,
-        endY: e.changedTouches[0].clientY
-      })
+      this.endX = e.changedTouches[0].clientX;
+      this.endY = e.changedTouches[0].clientY;
     },
     touchend: function (e) {
-      let that = this;
-      let angle = that.angle(
-        { X: that.data.startX, Y: that.data.startY },
-        { X: that.data.endX, Y: that.data.endY });
+      let angle = this.angle(
+        { X: this.startX, Y: this.startY },
+        { X: this.endX, Y: this.endY });
       if (Math.abs(angle) > 30) return;
       this.setData({
-        active: that.data.startX > that.data.endX
+        active: this.startX > this.endX
       })
     },
     deleteItem: function () {
