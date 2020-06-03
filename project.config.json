@@ -194,6 +194,12 @@
 					"name": "cascader",
 					"pathName": "pages/comp/cascader/cascader",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "slide",
+					"pathName": "pages/comp/slide/slide",
+					"scene": null
 				}
 			]
 		}
