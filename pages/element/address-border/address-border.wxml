@@ -1,0 +1,22 @@
+<address-border>
+  <text>插槽内容</text>
+</address-border>
+
+<view style="margin-top: 150rpx;"></view>
+
+<address-border>
+  <view class="size28 flex space-between v-center">
+    <view>
+      <view class="flex v-center">
+        <text>女士</text>
+        <text class="spacing-row-30">18000000001</text>
+        <button-rect class="spacing-row-30" colorBg="red" width="80rpx" height="30rpx" size="24rpx" radius="10rpx">默认</button-rect>
+      </view>
+      <view class="flex v-center margin-top-30">
+        <i class="iconfont icon-dingwei"></i>
+        <text class="spacing-row-30">XX省XX市XX区详细地址</text>
+      </view>
+    </view>
+    <i class="iconfont icon-right"></i>
+  </view>
+</address-border>

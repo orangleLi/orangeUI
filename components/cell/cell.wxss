@@ -1,0 +1,17 @@
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.left, .right{
+  display: flex;
+  align-items: center;
+}
+.space{
+  margin-right: 15rpx;
+}

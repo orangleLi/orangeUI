@@ -1,0 +1,12 @@
+<view class="mask" wx:if="{{isShow}}">
+  <view class="container">
+    <view class="contentGroup">
+      <view class="title">{{title}}</view>
+      <input focus="true" class="content" bindinput="bindinput" value="{{val}}" />
+    </view>
+    <view class="buttonGroup lineBorderBefore">
+      <view class="cancel lineBorderRight" catchtap="cancelClick">{{cancelText}}</view>
+      <view class="confirm"catchtap="confirmClick">{{confirmText}}</view>
+    </view>
+  </view>
+</view>

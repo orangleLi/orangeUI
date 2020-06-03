@@ -24,7 +24,12 @@
     "pages/element/resultPage/success/success",
     "pages/element/resultPage/fail/fail",
     "pages/element/noticeBar/noticeBar",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/element/icon-text/icon-text",
+    "pages/element/address-border/address-border",
+    "pages/element/m-input/m-input",
+    "pages/comp/empty/empty",
+    "pages/comp/suspend-modal/suspend-modal"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "suspend-modal": "../../../components/suspend-modal/suspend-modal",
+    "m-mask": "../../../components/mask/mask",
+    "button-rect": "../../../components/botton-rect/botton-rect",
+    "o-button": "../../../components/button/button"
+  }
+}

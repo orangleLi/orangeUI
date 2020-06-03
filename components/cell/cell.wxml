@@ -1,0 +1,12 @@
+<view class="list-item size28 color51 {{isWelt?'':'pad-lr-30'}}" style="{{btLine?'border: 1rpx solid #eee;':''}}">
+  <view class="left">
+    <i wx:if="icon" class="iconfont space {{icon}}" style="{{iconColor?'color: '+iconColor+';':''}}"></i>
+    <text wx:if="title" class="title">{{title}}</text>
+    <slot name="icon"></slot>
+  </view>
+  <view class="right" bindtap="navTo">
+    <slot name="fun"></slot>
+    <view wx:if="desc" class="info">{{desc}}</view>
+    <i wx:if="iconRight" class="iconfont {{iconRight}}"></i>
+  </view>
+</view>

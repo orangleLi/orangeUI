@@ -1,0 +1,14 @@
+<view class="bottom-nav-btn flex space-center" bindtap="navTo" 
+	style="{{(width?'width: ' + width + ';':'')+(height?'height: ' + height + ';':'')+(height?'line-height: ' + height + ';':'')+(size?'font-size: ' + size +  ';':'')+(radius?'border-radius: ' + radius + ';':'')+'background: ' + colorBg + ';' + (disabled?'opacity: 0.3;':'') + (border?'border: 1rpx solid '+border+';':'') +'color: ' + color + ';'}}">
+		<slot></slot>
+	</view>
+<!-- 
+	:style="(width?'width: ' + width + ';':'') +
+	(height?'height: ' + height + ';':'') +
+	(height?'line-height: ' + height + ';':'') +
+	(size?'font-size: ' + size +  ';':'') +
+	(radius?'border-radius: ' + radius + ';':'') +
+	'background: ' + colorBg + ';' +
+	(disabled?'opacity: 0.3;':'') +
+	(border?'border: 1rpx solid '+border+';':'') +
+	'color: ' + color + ';'"> -->

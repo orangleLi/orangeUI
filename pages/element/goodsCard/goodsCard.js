@@ -1,11 +1,35 @@
-// pages/element/goodsCard/goodsCard.js
+// pages/comp/goods/goods.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goodsInfo: [
+      {
+        url: 'http://mall.einwin.com/Uploads/ProductPtotos/b0ae06b9-4c69-420c-b427-b45ce140b07c/200x200/3e9bccdc-f3c6-4008-b6df-0bae69d33090.jpg',
+        title: '奇异果（4个/包）',
+        subTitle: '二级标题二级标题二级标题二级标题二级标题二级标题',
+        price: 199,
+        originalPrice: 299,
+        quantity: 1
+      },
+      {
+        url: 'http://mall.einwin.com/Uploads/ProductPtotos/b0ae06b9-4c69-420c-b427-b45ce140b07c/200x200/3e9bccdc-f3c6-4008-b6df-0bae69d33090.jpg',
+        title: '奇异果（4个/包）',
+        subTitle: '二级标题',
+        price: 199,
+        originalPrice: 299,
+        quantity: 1
+      },
+      {
+        url: 'http://mall.einwin.com/Uploads/ProductPtotos/b0ae06b9-4c69-420c-b427-b45ce140b07c/200x200/3e9bccdc-f3c6-4008-b6df-0bae69d33090.jpg',
+        title: '奇异果（4个/包）奇异果（4个/包）奇异果（4个/包）',
+        price: 199,
+        originalPrice: 299,
+        quantity: 1
+      }
+    ]
   },
 
   /**
@@ -14,9 +38,10 @@ Page({
   onLoad: function (options) {
 
   },
-  toGoodsDetail(e) {
-    console.log('data-id: ' + e.currentTarget.dataset.id);
+  inputNumber(e) {
+    console.log(`店铺index：${e.detail.index}(没有店铺可忽略这个值), 商品index：${e.detail.idx}, 数量：${e.detail.val}`)
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

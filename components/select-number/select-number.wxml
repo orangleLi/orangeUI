@@ -1,0 +1,7 @@
+<view class="numGroup">
+    <i class="iconfont icon-jian" catchtap="subGoods"></i>
+    <view class="color51 size28 inputView"
+    catchtap="inputNumber">{{val}}</view>
+    <i class="iconfont icon-add1" catchtap="addGoods"></i>
+    <prompt-modal isShow="{{isShow}}" val="{{val}}" bindconfirmClick="confirmClick" bindcancelClick="cancelClick"></prompt-modal>
+</view>

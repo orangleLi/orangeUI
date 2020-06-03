@@ -1,0 +1,32 @@
+<!-- #ifdef MP-WEIXIN -->
+<view class="goods-card-main bg-color-white {{col === '1' ? 'pad-30' : 'pad-15'}}" wx:if="goodsInfo">
+  <view class="goods-card-wrapper {{direction === 'h' ? 'flex-row' : 'flex-column'}}">
+    <view class="goods-img-box">
+      <view class="no-goods" wx:if="{{type === 1}}" style="{{col === '1'?'height: ' + imgHeight + 'rpx;':'width: ' + screenWidth + 'px; height: ' + imgHeight + 'rpx;'}}"><text>下架</text></view>
+      <view class="no-goods" wx:elif="{{type === 2}}" style="{{col === '1'?'height: ' + imgHeight + 'rpx;':'width: ' + screenWidth + 'px; height: ' + imgHeight + 'rpx;'}}"><text>所在区域暂时无货</text></view>
+      <view class="{{type !== 0? 'no-goods-img-bg': ''}}">
+        <image wx:if="goodsInfo[url]" class="goods-img" src="{{goodsInfo[url]}}"
+        style="{{col === '1'?'height: ' + imgHeight + 'rpx;':'width: ' + screenWidth + 'px; height: ' + imgHeight + 'rpx;'}}"
+        bindtap="toDatail"></image>
+      </view>
+    </view>
+    
+    <!-- 为什么小程序不支持:style="getStyle()" 好难过QAQ -->
+    <view class="goods-card-info-wrapper {{direction === 'h' ? 'info-wrapper-h' : 'info-wrapper-v'}}" bindtap="toDatail" wx:if="goodsInfo[title]">
+      <text class="size28 clamp-2 spacing-col-sm color51">{{goodsInfo[title]}}</text>
+      <text class="size24 clamp-1 spacing-col-sm color153 sub-title">{{goodsInfo[subTitle]}}</text>
+      <view class="{{direction === 'h' ? 'pos-bottom' : 'flex-column'}}">
+        <view class="price-wrapper">
+          <view class="price-box flex v-center">
+            <view class="price-icon price size28 color-theme bold" wx:if="{{goodsInfo[price]}}">{{goodsInfo[price]}}</view>
+            <view class="price-icon price-origin size24 color-gray spacing-row-sm" wx:if="{{goodsInfo[originalPrice]}}">
+            {{goodsInfo[originalPrice]}}
+            </view>
+          </view>
+        </view>
+        <slot name="slot-info"></slot>
+      </view>
+    </view>
+  </view>
+  <slot name="slot-opera"></slot>
+</view>

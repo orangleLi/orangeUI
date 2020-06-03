@@ -1,0 +1,65 @@
+.goods-img-box{
+  position: relative;
+}
+.sub-title{
+  height: 20px;
+  line-height: 20px;
+}
+.no-goods-img-bg{
+  opacity: 0.6;
+}
+.no-goods{
+  width: 220rpx;
+  height: 220rpx;
+  position: absolute;
+  z-index: 99;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.goods-card-main{
+  box-sizing: border-box;
+}
+.goods-card-wrapper{
+  display: flex;
+  box-sizing: border-box;
+}
+.goods-card-wrapper.flex-row .goods-img{
+  width: 220rpx;
+}
+.goods-img{
+  border-radius: 6px;
+}
+.goods-card-info-wrapper{
+  position: relative;
+}
+.goods-card-wrapper.flex-row .goods-card-info-wrapper{
+  margin-left: 30rpx;
+  flex: 1;
+}
+.info-wrapper-h{
+  max-width: 440rpx;
+}
+.price-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pos-bottom{
+  position: absolute;
+  width: 440rpx;
+  bottom: 0;
+}
+.price-origin{
+  text-decoration: line-through;
+}
+.buy{
+  background: linear-gradient(to bottom right, #ff5b1f , #ff7200);
+  color: #fff;
+  padding: 8rpx 12rpx;
+  border-radius: 8rpx;
+}

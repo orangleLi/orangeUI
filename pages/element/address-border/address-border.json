@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "button-rect": "../../../components/botton-rect/botton-rect",
+    "address-border": "../../../components/address-border/address-border"
+  }
+}

@@ -1,0 +1,36 @@
+.numGroup{
+  margin-left: 15rpx;
+  border: 1rpx solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+}
+.numGroup .inputView{
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-left: 2rpx solid #eee;
+  border-right: 2rpx solid #eee;
+}
+.numGroup input{
+  /* margin: 0 15rpx; */
+  border: 1rpx solid #eee;
+  text-align: center;
+  width: 100%;
+  height: 50rpx;
+  flex: 1;
+  border: none;
+}
+.numGroup .icon{
+  width: 12rpx;
+  height: 12rpx;
+  box-sizing: border-box;
+  margin: 0 16rpx;
+}
+icon{
+  line-height: 16px;
+}

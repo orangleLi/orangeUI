@@ -1,0 +1,11 @@
+<view class="icon-text-wrapper text-center" bindtap="navTo">
+  <view class="img-box text-center" wx:if="{{img}}">
+    <image class="icon-img" src="{{img}}" style="{{'width: ' + imgW + ';' + 'height: ' + imgH + ';'}}"></image>
+    <view class="spacing-col-sm text">{{text}}</view>
+  </view>
+  <view class="icon-text" wx:else>
+    <i class="iconfont {{icon}}"></i>
+    <text class="text">{{text}}</text>
+  </view>
+  <view wx:if="{{num > 0}}" class="icon-text-cricle">{{num}}</view>
+</view>

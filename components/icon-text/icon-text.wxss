@@ -1,0 +1,40 @@
+.iconfont{
+  font-size: 38rpx;
+}
+.icon-text{
+  
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-size: 26rpx;
+  /* display: block; */
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.icon-text-wrapper{
+  position: relative;
+  /* margin: 0 15rpx; */
+}
+.img-box{
+  /* margin: 0 10rpx; */
+  width: 100%;
+}
+.icon-img{
+  margin: 0 auto;
+}
+
+.icon-text-cricle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background-color: #DD524D;
+	border-radius: 50%;
+	font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+}

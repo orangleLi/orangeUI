@@ -1,0 +1,18 @@
+.m-input-wrapper{
+	display: flex;
+	align-items: center;
+	flex: 1;
+	border-radius: 10rpx;
+	/* margin: 15rpx 30rpx; */
+	padding: 0 15rpx;
+}
+/*输入框*/
+.m-input{
+	margin-left: 15rpx;
+	margin-right: 15rpx;
+	box-sizing: border-box;
+	font-size: 26rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+}
+/*输入框*/

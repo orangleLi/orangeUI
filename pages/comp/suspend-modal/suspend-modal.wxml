@@ -1,0 +1,18 @@
+<view class="size32 pad-30" style="margin-bottom: 100rpx;">自定义弹框</view>
+
+<o-button theme="themebg" bindtap="alertModal">Click me</o-button>
+
+<suspend-modal isShow="{{showModal}}">
+  <view class="size28 color51 pad-30">
+    <view class="text-center">你提交了如下一笔转账信息</view>
+    <view class="color153 spacing-col-sm">企业名称</view>
+    <view class="color153 spacing-col-sm">银行账户</view>
+    <view class="color153 spacing-col-sm">转账金额</view>
+    <view class="spacing-col-sm">您最多只有一次补录机会，是否确认进行补录转账信息</view>
+  </view>
+  <view class="flex">
+    <button-rect width="100%" height="80rpx" border="#eee" color="#333" bindnavTo="alertModal" radius="0" class="flex-1">关闭</button-rect>
+    <button-rect width="100%" height="80rpx" border="#eee" color="#ff5b1f" bindnavTo="alertModal" radius="0" class="flex-1">确认</button-rect>
+  </view>
+</suspend-modal>
+<m-mask wx:if="{{showModal}}" bindtap="alertModal"></m-mask>

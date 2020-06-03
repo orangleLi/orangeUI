@@ -18,7 +18,9 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.3",
@@ -156,6 +158,41 @@
 					"id": -1,
 					"name": "classify-bar",
 					"pathName": "pages/comp/classify-bar/classify-bar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/element/icon-text/icon-text",
+					"pathName": "pages/element/icon-text/icon-text",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/element/m-input/m-input",
+					"pathName": "pages/element/m-input/m-input",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comp/goods/goods",
+					"pathName": "pages/comp/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comp/suspend-modal/suspend-modal",
+					"pathName": "pages/comp/suspend-modal/suspend-modal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cascader",
+					"pathName": "pages/comp/cascader/cascader",
 					"scene": null
 				}
 			]

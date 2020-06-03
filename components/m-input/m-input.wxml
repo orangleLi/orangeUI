@@ -1,0 +1,4 @@
+<view class="m-input-wrapper size32 color51" style="{{'background-color: ' + colorBg+';'}}">
+  <i wx:if="{{icon}}" class="iconfont {{icon}}"></i>
+  <input placeholder="{{placeholder}}" value="{{val}}" class="m-input flex-1 spacing-row-30" focus="{{focus}}" bindinput="onInput" />
+</view>

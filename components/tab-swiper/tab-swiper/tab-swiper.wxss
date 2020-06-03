@@ -1,0 +1,25 @@
+
+@import "/resources/wxss/common.wxss";
+Page{
+  background-color: #eee;
+}
+.title{
+  text-align: center;
+  display: flex;
+  /* height: 74rpx; */
+  line-height: 68rpx;
+  font-size: 28rpx;
+  border-top: 1rpx solid rgb(238, 238, 238);
+  overflow: scroll;
+}
+.title .titleList{
+  min-width: 200rpx;
+  text-align: center;
+}
+.activeRect{
+  width: 40rpx;
+  height: 6rpx;
+  border-radius: 3rpx;
+  background: rgb(255, 92, 31);
+  margin: 0 auto;
+}

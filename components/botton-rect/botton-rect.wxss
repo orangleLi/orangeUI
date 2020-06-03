@@ -1,0 +1,10 @@
+.bottom-nav-btn{
+  height: 100rpx;		
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  width: 200rpx;
+  display: flex;
+  justify-content: center;
+}

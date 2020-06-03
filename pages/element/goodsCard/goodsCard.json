@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "goods-card": "../../../components/goodsCard/goodsCard"
+    "grid": "../../../components/grid/grid",
+    "goods-card": "../../../components/goods-card/goods-card",
+    "select-number": "../../../components/select-number/select-number"
   }
 }

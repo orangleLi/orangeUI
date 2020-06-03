@@ -1,0 +1,72 @@
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+.container{
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.contentGroup{
+  padding: 0 15px;
+  text-align: left;
+width: 100%;
+box-sizing: border-box;
+}
+.title{
+  font-size: 30rpx;
+}
+.content{
+  font-size: 27rpx;
+  color: rgb(153,153,153);
+  margin: 20rpx 0;
+border-bottom: 2rpx solid #ffa70a;
+height: 30px;
+text-align: left;
+color: #000;
+}
+.buttonGroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 39px;
+font-size: 30rpx;
+  overflow: hidden;
+  position: relative;
+}
+.cancel{
+  color: #000;
+  width: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.confirm{
+  color: #ff6a0b;
+  text-align: center;
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+}

@@ -1,0 +1,3 @@
+<view class="grid-wrapper bg-color-white" :class="'col-' + col">
+  <slot></slot>
+</view>

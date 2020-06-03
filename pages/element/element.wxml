@@ -39,5 +39,19 @@
     <view>时间轴</view>
     <view>Timeline</view>
   </view>
+
+  <view class="fun-box bg-purple" style="--second: 1.4;" data-url="./icon-text/icon-text" bindtap="navTo">
+    <view>图标文字</view>
+    <view>IconText</view>
+  </view>
+
+  <view class="fun-box bg-pink" style="--second: 2.4;" data-url="./address-border/address-border" bindtap="navTo">
+    <view>地址框</view><!-- 级联选择 -->
+    <view>Address</view>
+  </view>
+  <view class="fun-box bg-brown" style="--second: 2;" data-url="./m-input/m-input" bindtap="navTo">
+    <view>搜索框</view>
+    <view>Search</view>
+  </view>
   <!--文本截断 搜索栏 数字框 开关 滑动条slider 文件上传 手风琴折叠框 吸顶 头像 弹出菜单 遮罩层 公告  倒计时（翻牌儿）-->
 </view>

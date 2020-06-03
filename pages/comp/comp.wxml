@@ -50,13 +50,19 @@
       <view>Cascader</view>
     </view>
 
+    <view class="fun-box bg-cyan" style="--second: 1.2;" data-url="./empty/empty" bindtap="navTo">
+      <view>空</view>
+      <view>Empty</view>
+    </view>
+
+    <view class="fun-box bg-green" style="--second: 1.2;" data-url="./suspend-modal/suspend-modal" bindtap="navTo">
+      <view>自定义弹框</view>
+      <view>Alert</view>
+    </view>
+
     <view class="fun-box bg-pink" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
       <view>进度条</view>
       <view>ProgressBar</view>
     </view>
-    <!-- <view class="fun-box bg-cyan" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
-      <view>地址选择</view>
-      <view>ProgressBar</view>
-    </view> -->
-    <!--文本截断 数字框 开关 商品列表 功能列表 购物车商品列表 -->
+    
   </view>

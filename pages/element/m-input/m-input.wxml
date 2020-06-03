@@ -1,0 +1,11 @@
+<view class="pad-30">
+  <m-input placeholder="搜索关键字" icon="icon-sousuo" bindonInput="onInput"></m-input>
+</view>
+
+<view class="pad-30">
+  <m-input placeholder="请搜索..." icon="" bindonInput="onInput" focus="true"></m-input>
+</view>
+
+<view class="pad-30">
+  <m-input placeholder="请搜索..." icon="icon-ditu" colorBg="#f5f5f5" bindonInput="onInput"></m-input>
+</view>

@@ -1,0 +1,8 @@
+.grid-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-1>.goods-card-wrapper{width: 100%;}
+.col-2>.goods-card-wrapper{width: 50%;}
+.col-3>.goods-card-wrapper{width: 33.33%;}
+.col-4>.goods-card-wrapper{width: 25%;}

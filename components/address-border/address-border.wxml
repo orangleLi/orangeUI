@@ -1,0 +1,9 @@
+<view class="address-wrapper bg-color-white margin-top-30 margin-bottom-30 pad-30">
+  <view class="address-border address-border-top">
+    <view class="rdda-div-sibianxing {{index%2 == 0 ? 'address-border-red': 'address-border-blue'}}" wx:for="{{num}}" wx:key="unique"></view>
+  </view>
+  <slot></slot>
+  <view class="address-border address-border-bottom">
+    <view class="rdda-div-sibianxing {{index%2 == 0 ? 'address-border-red': 'address-border-blue'}}" wx:for="{{num}}" wx:key="unique"></view>
+  </view>
+</view>

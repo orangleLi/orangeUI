@@ -9,8 +9,84 @@
     <text>Right</text>
   </div>
   <div class="icon-item">
-    <i class="iconfont icon-saoyisao"></i>
-    <text>Scan</text>
+    <i class="iconfont icon-up1"></i>
+    <text>Top</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-sanjiaoxing"></i>
+    <text>Bottom</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-up3"></i>
+    <text>Top</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-fuwu"></i>
+    <text>Heart</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-aixin"></i>
+    <text>Heart</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-xiangkan"></i>
+    <text>Favorite</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-buganxingqu"></i>
+    <text>Uninterested</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-cycle"></i>
+    <text>Cycle</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-information"></i>
+    <text>Info</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-wuliuguanli"></i>
+    <text>Car</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-daifahuo1"></i>
+    <text>Car</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-shuangshangjiantou-"></i>
+    <text>Top</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-help"></i>
+    <text>Help</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-store"></i>
+    <text>Store</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-circle"></i>
+    <text>Cricle</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-cart"></i>
+    <text>Cart</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-yanjing"></i>
+    <text>Eye</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-biyan"></i>
+    <text>Eye</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-mimasuo"></i>
+    <text>Lock</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-yduinaozhong"></i>
+    <text>Clock</text>
   </div>
   <div class="icon-item">
     <i class="iconfont icon-sousuo"></i>
@@ -21,20 +97,12 @@
     <text>Collect</text>
   </div>
   <div class="icon-item">
-    <i class="iconfont icon-aixin"></i>
-    <text>Heart</text>
-  </div>
-  <div class="icon-item">
     <i class="iconfont icon-bianji"></i>
     <text>Edit</text>
   </div>
   <div class="icon-item">
     <i class="iconfont icon-bangzhu"></i>
     <text>Help</text>
-  </div>
-  <div class="icon-item">
-    <i class="iconfont icon-buganxingqu"></i>
-    <text>Uninterested</text>
   </div>
   <div class="icon-item">
     <i class="iconfont icon-bofangjilu"></i>
@@ -97,6 +165,14 @@
     <text>Add</text>
   </div>
   <div class="icon-item">
+    <i class="iconfont icon-jian"></i>
+    <text>sub</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-add1"></i>
+    <text>Add</text>
+  </div>
+  <div class="icon-item">
     <i class="iconfont icon-shanchu"></i>
     <text>Delete</text>
   </div>
@@ -117,15 +193,15 @@
     <text>WeChat</text>
   </div>
   <div class="icon-item">
-    <i class="iconfont icon-xiangkan"></i>
-    <text>Favorite</text>
+    <i class="iconfont icon-sanjiao_xia"></i>
+    <text>Bottom</text>
   </div>
   <div class="icon-item">
-    <i class="iconfont icon-aixin1"></i>
-    <text>Heart</text>
+    <i class="iconfont icon-sanjiaotop"></i>
+    <text>Top</text>
   </div>
   <div class="icon-item">
-    <i class="iconfont icon-chenggong1"></i>
+    <i class="iconfont icon-duigoutianchong-"></i>
     <text>Success</text>
   </div>
   <div class="icon-item">
@@ -135,5 +211,9 @@
   <div class="icon-item">
     <i class="iconfont icon-dianzan1"></i>
     <text>Like</text>
+  </div>
+  <div class="icon-item">
+    <i class="iconfont icon-aixin1"></i>
+    <text>Heart</text>
   </div>
 </view>

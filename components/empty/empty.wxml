@@ -1,0 +1,4 @@
+<view class="flex flex-column v-center" style="margin-top: 120rpx;">
+  <image src="/resources/images/none.png" style="width: 300rpx;height: 300rpx;"></image>
+  <slot></slot>
+</view>

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     imagePath: '',
-    quality: 0.2,
+    quality: 0.4,
     cWidth: 0,
     cHeight: 0,
     timer: null,

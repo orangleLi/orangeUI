@@ -1,0 +1,17 @@
+@import '/resources/wxss/common.wxss';
+.bottom-nav-wrapper{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 999;
+}
+@supports (bottom: env(safe-area-inset-bottom)){
+    .nav-footer{
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}

@@ -1,0 +1,3 @@
+<view wx:if="{{isShow}}" class="cart-list bg-color-white" style="max-height: 380px;overflow-y: scroll;">
+  <slot></slot>
+</view>

@@ -1,0 +1,7 @@
+<block>
+  <swiper-item>       
+      <scroll-view style="height: {{height}}px;" bindscrolltolower="lower" scroll-y="true">
+        <slot></slot>
+    </scroll-view>
+  </swiper-item>
+</block>

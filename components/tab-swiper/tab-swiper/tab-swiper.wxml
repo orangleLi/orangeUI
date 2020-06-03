@@ -1,0 +1,13 @@
+<view class="activityOrder-wrapper">
+  <view class="title bg" id="title">
+    <view class="titleList {{nowActive===index? 'active':''}}" style="width: {{100/tabArr.length}}%;" wx:for="{{tabArr}}" wx:key="{{index}}" data-curr="{{index}}" bindtap="switchTagClick">
+      <text>{{item}}</text>
+      <view class="{{nowActive===index? 'activeRect':''}}"></view>
+    </view>
+  </view>
+
+  
+    <swiper style="height: {{height}}px;" bindchange="switchTag" current="{{nowActive}}">
+      <slot></slot>
+    </swiper>
+</view>

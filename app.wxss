@@ -2,7 +2,7 @@
 /* #ff5c1e rgb(255, 92, 30) */
 /* #ff7002 rgb(255, 112, 2) */
 @import '/resources/Iconfont/iconfont.wxss';
-@import '/resources/orangeui.wxss';
+@import '/resources/wxss/common.wxss';
 
 .bg-blue{
   background-color: #0081ff;

@@ -144,3 +144,100 @@ button::after{
 .dpnone{
   display: none!important;
 }
+
+
+.bg-color-white{background-color: #fff;}
+.bg-color-gray{background-color: #eee;}
+
+.flex{display: flex;}
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+
+.space-center{justify-content: center;}
+.space-between{justify-content: space-between;}
+.space-end{justify-content: flex-end;}
+
+.v-center{align-items: center;}
+.flex-1{flex: 1;}
+.text-center{text-align: center;}
+
+.flex-wrap{flex-wrap: wrap;}
+.flex-nowrap{flex-wrap: nowrap;}
+.spacing-col-sm{margin-top: 15rpx;}
+.spacing-row-sm{margin-left: 15rpx;}
+.spacing-row-30{margin-left: 30rpx;}
+
+.margin-top-30{margin-top: 30rpx;}
+.margin-bottom-30{margin-bottom: 30rpx;}
+.margin-30{margin: 30rpx;}
+.margin-15{margin: 15rpx;}
+.padding-top-30{padding-top: 30rpx;}
+.padding-bottom-30{padding-bottom: 30rpx;}
+.pad-30{padding: 30rpx;}
+.pad-15{padding: 15rpx;}
+.pad-tb-15{padding: 15rpx 0;}
+.pad-lr-15{padding: 0 15rpx;}
+.pad-tb-30{padding: 30rpx 0;}
+.pad-lr-30{padding: 0 30rpx;}
+
+.border-t-line{border-top: 1rpx solid #eee;}
+.border-b-line{border-bottom: 1rpx solid #eee;}
+.border-l-line{border-left: 1rpx solid #eee;}
+.border-r-line{border-right: 1rpx solid #eee;}
+
+.border-box{box-sizing: border-box;}
+
+.float-left{
+	float: left;
+}
+.radius-10{
+	border-radius: 10rpx;
+}
+.fix-iphonex-button{
+	bottom:68rpx!important;
+}
+.fix-iphonex-button::after {
+  content: ' ';
+  position: fixed;
+  bottom: 0!important;
+  height: 68rpx!important;
+  width: 100%;
+  background: #fff;
+} 
+
+button::after{
+  border: none;
+}
+.clamp-1{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;}
+.clamp-2{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+.tab-swper-item{overflow: scroll;}  
+
+.scroll{overflow: scroll;}
+.overflow-hidden{overflow: hidden;}
+
+.ad-img{height: 260rpx;width: 100%;}
+.translateY-negative{transform: translateY(-10rpx);}
+.translateY{transform: translateY(10rpx);}
+.logo{width: 80rpx; height: 80rpx; border-radius: 50%;}
+
+.mt-bottom-nav{margin-bottom: 100rpx;}
+
+/*小圆点*/
+.icon-text-cricle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	background-color: #DD524D;
+	border-radius: 50%;
+	font-size: 22rpx;
+	color: #fff;
+}
+/*小圆点*/
+
+
+.price-icon::before{
+	content: '￥'
+}

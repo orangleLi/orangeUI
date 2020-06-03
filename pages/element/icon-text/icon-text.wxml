@@ -1,0 +1,12 @@
+<view class="mt-bottom-nav">
+  <icon-text img="/resources/images/heart.png" imgW="50rpx" imgH="50rpx" text="收藏"></icon-text>
+  <buttom-nav style="padding-left: 15rpx;">
+      <icon-text icon="icon-cart" text="购物车" num="5" bindnavto="navTo" class="spacing-row-30"></icon-text>
+      <icon-text icon="icon-fuwu" text="收藏" bindnavto="navTo"></icon-text>
+      <icon-text icon="icon-store" text="店铺" bindnavto="navTo"></icon-text>
+      <view class="flex">
+        <button-rect colorBg="red" radius="0rpx" size="28rpx" bindnavTo="navTo(3)">加入购物车</button-rect>
+        <button-rect colorBg="green" radius="0rpx" size="28rpx" bindnavTo="navTo(4)">一键购</button-rect>
+      </view>
+  </buttom-nav>
+</view>

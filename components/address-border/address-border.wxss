@@ -1,0 +1,33 @@
+.address-wrapper{
+  position: relative;
+}
+.address-border{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+    height: 3px;
+}
+.address-border-top{
+  top: 0;
+}
+.address-border-bottom{
+  bottom: 0;
+}
+
+.rdda-div-sibianxing{
+    float: left;
+    width: 17px;
+    height: 3px;
+    transform: skewX(55deg);
+  margin-right: 15px;
+}
+.rdda-div-sibianxing:nth-last-of-type(1) {
+  margin: 0;
+}
+.address-border-blue{
+    background: #53afff;
+}
+.address-border-red{
+    background: #ff6450;
+}

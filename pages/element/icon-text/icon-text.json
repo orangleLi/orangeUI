@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "icon-text": "../../../components/icon-text/icon-text",
+    "buttom-nav": "../../../components/bottom-nav/bottom-nav",
+    "button-rect": "../../../components/botton-rect/botton-rect"
+  }
+}

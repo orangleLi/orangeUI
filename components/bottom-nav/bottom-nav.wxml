@@ -1,0 +1,3 @@
+<view class="bottom-nav-wrapper flex v-center bg-color-white nav-footer {{isIphoneX?'fix-iphonex-button':''}}" style="{{'height: ' + height + ';'}}">
+  <slot></slot>
+</view>
