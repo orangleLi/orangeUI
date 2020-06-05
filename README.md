@@ -63,9 +63,9 @@
 
 使用示例在pages文件夹下:
 
-组件 pages/element
+元素 pages/element
 
-元素 pages/comp
+组件 pages/comp
 
 页面风格样式参考了
 [ColorUI](https://github.com/weilanwl/ColorUI)
