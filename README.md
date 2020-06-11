@@ -97,11 +97,12 @@ pages/comp/cascader/cascader
 
 #### 绘制海报
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1231b7d433e0?w=379&h=670&f=gif&s=179472)
+
 pages/comp/poster/poster
 
 [解析](https://juejin.im/post/5d75f151f265da03bf0f69b7)
 
-12. 贴底框
+#### 贴底框
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a123a8ed1523a?w=382&h=57&f=png&s=6209)
 
 引入自定义组件
