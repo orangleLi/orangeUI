@@ -20,9 +20,10 @@ app.wxss内容复制粘到项目中
 
 自定义组件放在/components下
 
-1. 轮播图：  普通轮播，卡片式轮播
+#### 轮播图：  普通轮播，卡片式轮播
 
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a11b33b7c4fbf?w=379&h=670&f=gif&s=1906116)
+
 组件路径
 ```
 "usingComponents": {
@@ -33,6 +34,7 @@ app.wxss内容复制粘到项目中
 使用例子
 
 pages/comp/swiper/swiper
+
 ```
 <view class="title">普通轮播图</view>
   <swiper-normal imgUrls="{{imgUrls}}" indicatorDots="{{indicatorDots}}"
@@ -43,7 +45,7 @@ pages/comp/swiper/swiper
   <swiper-card imgUrls="{{imgUrls}}" circular interval="{{2000}}" duration="{{800}}" bind:swiperChange="change"></swiper-card>
 </view>
 ```
-2. 滚动导航栏
+#### 滚动导航栏
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a11b6c4254dc9?w=379&h=670&f=gif&s=178941)
 
 组件路径
@@ -53,43 +55,47 @@ pages/comp/swiper/swiper
 使用例子
 
 pages/comp/classify-bar/classify-bar
+
 ```
 <nav classify="{{classify}}" bind:clickClassify="clickClassify"></nav>
 ```
 
-3. 地图定位（使用百度地图插件）
+#### 地图定位（使用百度地图插件）
  
 pages/comp/Location/Location
 
-4. 图片压缩
+####  图片压缩
 
 pages/pictureCompression/pictureCompression
 
 [解析](https://juejin.im/post/5d5df7cf6fb9a06b09361f9a)
 
-5. 选项卡
+#### 选项卡
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a11fbc1f18ca7?w=379&h=670&f=gif&s=226541)
 pages/slidingSwitch/slidingSwitch
 
-6. 滑动删除
+#### 滑动删除
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1206ef20981c?w=379&h=670&f=gif&s=69368)
+
 pages/Slide/slide
 
-7. 加入购物车动画
+#### 加入购物车动画
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1211736aa0a0?w=379&h=670&f=gif&s=156263)
+
 pages/addShoppingCarAnimate/addShoppingCarAnimate
 
 [解析](https://juejin.im/post/5d54f17a518825053e042ff6)
 
-8. 通讯录字母索引查询
+#### 通讯录字母索引查询
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1228a2beb712?w=379&h=670&f=gif&s=1264486)
+
 pages/comp/initialQuery/initialQuery
 
-10. 省市区级联选择（省按照字母排序）
+#### 省市区级联选择（省按照字母排序）
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a122ea9a5fb17?w=379&h=670&f=gif&s=175478)
 pages/comp/cascader/cascader
 
-11. 绘制海报
+#### 绘制海报
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1231b7d433e0?w=379&h=670&f=gif&s=179472)
 pages/comp/poster/poster
 
@@ -97,12 +103,15 @@ pages/comp/poster/poster
 
 12. 贴底框
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a123a8ed1523a?w=382&h=57&f=png&s=6209)
+
 引入自定义组件
 ```
 "buttom-nav": "../../../components/bottom-nav/bottom-nav"
 ```
 使用例子
+
 pages/element/icon-text/icon-text
+
 ```
 <buttom-nav style="padding-left: 15rpx;">
       <icon-text icon="icon-cart" text="购物车" num="5" bindnavto="navTo" class="spacing-row-30"></icon-text>
@@ -114,7 +123,8 @@ pages/element/icon-text/icon-text
       </view>
 </buttom-nav>
 ```
-12. 图标文字
+
+#### 图标文字
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1251fcb3fa38?w=223&h=50&f=png&s=5270)
 
 引入自定义组件
@@ -122,7 +132,9 @@ pages/element/icon-text/icon-text
 "icon-text": "../../../components/icon-text/icon-text"
 ```
 使用例子
+
 pages/element/icon-text/icon-text
+
 ```
 <icon-text img="/resources/images/heart.png" imgW="50rpx" imgH="50rpx" text="收藏"></icon-text>
 <buttom-nav style="padding-left: 15rpx;">
@@ -135,13 +147,15 @@ pages/element/icon-text/icon-text
   </view>
 </buttom-nav>
 ```
-13. 地址框
+#### 地址框
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a126f0e517851?w=378&h=242&f=png&s=4720)
+
 引入自定义组件
 ```
 "address-border": "../../../components/address-border/address-border"
 ```
 使用例子
+
 ```
 pages/element/address-border/address-border
 ```
@@ -167,9 +181,12 @@ pages/element/address-border/address-border
   </view>
 </address-border>
 ```
-14. 搜索框
+#### 搜索框
+
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a128158a9c25e?w=377&h=168&f=png&s=3458)
+
 引入自定义组件地址
+
 ```
 "m-input": "../../../components/m-input/m-input"
 ```
@@ -188,14 +205,19 @@ pages/element/address-border/address-border
 </view>
 ```
 ### 元素
-1. 图标
+#### 图标
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a13fc498dc067?w=1560&h=550&f=png&s=45114)
+
 pages/element/icon/icon
-2. 时间轴
+
+#### 时间轴
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a12a435a61941?w=1181&h=439&f=png&s=41291)
+
 pages/comp/timeLine/timeLine 
-3. 按钮
+
+#### 按钮
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a12a6ef9e89ab?w=383&h=672&f=png&s=40792)
+
 ```
 引入自定义组件
 "o-button": "../../../components/button/button"
@@ -203,8 +225,9 @@ pages/comp/timeLine/timeLine
 使用例子
 pages/element/btn/btn
 ``` 
-4. 自定义宽高颜色等按钮
+#### 自定义宽高颜色等按钮
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a131171800284?w=281&h=61&f=png&s=3998)
+
 ```
 "button-rect": "../../../components/botton-rect/botton-rect"
 ```
@@ -214,8 +237,9 @@ pages/element/address-border/address-border和pages/element/icon-text/icon-text�
 <button-rect colorBg="green" radius="0rpx" size="28rpx" bindnavTo="navTo(4)">一键购</button-rect>
 <button-rect class="spacing-row-30" colorBg="red" width="80rpx" height="30rpx" size="24rpx" radius="10rpx">默认</button-rect>
 ```
-5. 列表
+#### 列表
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a133e42d66238?w=376&h=374&f=png&s=12198)
+
 引入自定义组件路径
 ```
 "list": "../../../components/list/list",
@@ -259,8 +283,9 @@ pages/element/list/list
 <cell icon="icon-bianji" title="我的订单"></cell>
 <cell icon="icon-dingwei" title="我的地址" desc="描述" btLine="true"></cell>
 ```
-5. 分割线
+#### 分割线
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a134e8989bd99?w=380&h=221&f=png&s=1977)
+
 引入
 ```
 "footer-divider": "../../../components/footerDivider/footerDivider"
@@ -275,8 +300,9 @@ pages/element/footerDivider/footerDivider
 <footer-divider>Time Travel</footer-divider>
 <footer-divider><i class="iconfont icon-aixin"></i></footer-divider>
 ```
-6. 商品卡片
+#### 商品卡片
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a135a9be7f6e9?w=1200&h=550&f=png&s=118412)
+
 引入
 ```
 "grid": "../../../components/grid/grid",
@@ -313,14 +339,16 @@ pages/comp/goods/goods
   </view>
 </grid>
 ```
-7. 结果页（成功/失败）
+#### 结果页（成功/失败）
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a1370aeb63aa2?w=381&h=674&f=png&s=12823)
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a13718ba945f8?w=378&h=668&f=png&s=10400)
+
 pages/element/resultPage/success/success
 
 pages/element/resultPage/fail/fail
-8. 空页
+#### 空页
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a13752d66883a?w=382&h=674&f=png&s=12317)
+
 引入
 ```
 "empty": "../../../components/empty/empty"
@@ -334,8 +362,9 @@ pages/comp/empty/empty
   <text class="size26 color51">木有了~</text>
 </empty>
 ```
-9. 自定义弹框
+#### 自定义弹框
 ![](https://user-gold-cdn.xitu.io/2020/6/11/172a139093cb70e5?w=375&h=669&f=png&s=17919)
+
 引入
 ```
 "suspend-modal": "../../../components/suspend-modal/suspend-modal",
@@ -361,7 +390,7 @@ pages/comp/suspend-modal/suspend-modal
 </suspend-modal>
 <m-mask wx:if="{{showModal}}" bindtap="alertModal"></m-mask>
 ```
-10. 进度条
+#### 进度条
 pages/comp/progressBar/progressBar
 
 自定义组件放在引入components文件夹下
