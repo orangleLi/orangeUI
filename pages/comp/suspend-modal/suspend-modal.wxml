@@ -4,11 +4,11 @@
 
 <suspend-modal isShow="{{showModal}}">
   <view class="size28 color51 pad-30">
-    <view class="text-center">你提交了如下一笔转账信息</view>
+    <view class="text-center">你查看了如下企业信息</view>
     <view class="color153 spacing-col-sm">企业名称</view>
     <view class="color153 spacing-col-sm">银行账户</view>
     <view class="color153 spacing-col-sm">转账金额</view>
-    <view class="spacing-col-sm">您最多只有一次补录机会，是否确认进行补录转账信息</view>
+    <view class="spacing-col-sm">请确认信息是否正确</view>
   </view>
   <view class="flex">
     <button-rect width="100%" height="80rpx" border="#eee" color="#333" bindnavTo="alertModal" radius="0" class="flex-1">关闭</button-rect>

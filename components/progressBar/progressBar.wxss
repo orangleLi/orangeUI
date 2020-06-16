@@ -1,70 +1,21 @@
 /* pages/comp/progressBar/progressBar.wxss */
-.title{
-  margin: 30rpx;
-  font-size: 34rpx;
-  color: #333;
-}
-.progressBar{
-  margin: 30rpx;
-}
-.progress-box{
-  width: 600rpx;
-  height: 40rpx;
-  position: relative;
-  background: #ccc;
-  border-radius: 35rpx;
-}
-.progress{
-  position: absolute;
-  height: 100%;
-  background: #ff5b1f;
-  border-radius: 35rpx;
-  color: #fff;
-  text-align: right;
-}
-.percentage{
-  margin: 0 15rpx;
-  font-size: 22rpx;
-  line-height: 100%;
-  vertical-align: middle;
-}
-
-.progress-outside{
-  display: flex;
-  align-items: center;
-}
-
-/* 环形 */
-/* .annular-outside{
-  width: 200rpx;
-  height: 200rpx;
-  border-radius: 50%;
-  background: #fff;
-  border: 15rpx solid #e5e9f2;
-}
-.annular-inside{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #fff;
-  border: 15rpx solid #e5e9f2;
-} */
 .annular-box{
   width: 100px;
   height: 100px;
   position: relative;
-}
-.annular-box canvas{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
 }
 .annular-percentage{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.canvas{
+  width: 100px;
+  height: 100px;
+}
+.draw-canvas{
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
 }

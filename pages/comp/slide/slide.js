@@ -25,21 +25,53 @@ Page({
   onLoad: function (options) {
 
   },
-  deleteItem: function (e) {
+  touchstart: function (e) {
+    this.setData({
+      startX: e.changedTouches[0].clientX,
+      startY: e.changedTouches[0].clientY
+    })
+  },
+  touchmove: function (e) {
+    this.setData({
+      endX: e.changedTouches[0].clientX,
+      endY: e.changedTouches[0].clientY
+    })
+  },
+  touchend: function (e) {
+    let that = this;
+    let angle = that.angle({ X: that.data.startX, Y: that.data.startY }, { X: that.data.endX, Y: that.data.endY });
+    if (Math.abs(angle) > 30) return;
+    if (that.data.endX > that.data.startX) {
+      this.setData({
+        active: -1
+      })
+    } else {
+      this.setData({
+        active: e.currentTarget.dataset.index
+      })
+    }
+  },
+  deleteItem: function(e) {
     const index = e.currentTarget.dataset.index;
     let data = this.data.list;
     data.splice(index, 1);
     this.setData({
-      list: data
+      list: data,
+      active: -1
     })
   },
-  clickItem () {
-    wx.showToast({
-      title: 'Click',
-      icon: 'none',
-      duration: 2000
-    })
+  /**
+  * 计算滑动角度
+  * @param {Object} start 起点坐标
+  * @param {Object} end 终点坐标
+  */
+  angle: function (start, end) {
+    var _X = end.X - start.X,
+      _Y = end.Y - start.Y
+    //返回角度 /Math.atan()返回数字的反正切值
+    return 360 * Math.atan(_Y / _X) / (2 * Math.PI);
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

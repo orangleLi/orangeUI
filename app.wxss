@@ -66,39 +66,3 @@
   margin: 0 2.5% 20px;
   /* animation: show calc(var(--second) * 1s) ease 0s 1 normal none runningS */
 }
-
-@keyframes show {
-  0% {
-    transform: translateY(-50px);
-  }
-  60% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-  /* 5%, 50% {
-    transform: scale(1);
-  }
-  10% {
-      transform: scale(0.9);
-  }
-  15% {
-      transform: scale(1.05);
-  }
-  20% {
-      transform: scale(1.05) rotate(-5deg);
-  }
-  25% {
-      transform: scale(1.05) rotate(5deg);
-  }
-  30% {
-      transform: scale(1.05) rotate(-3deg);
-  }
-  35% {
-      transform: scale(1.05) rotate(2deg);
-  }
-  40% {
-      transform: scale(1.05) rotate(0);
-  } */
-}

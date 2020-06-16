@@ -14,6 +14,9 @@ Page({
   onLoad: function (options) {
 
   },
+  onShow() {
+    console.log(wx.getStorageSync('changeCommunityInfo'))
+  },
   navTo(e) {
     console.log(e)
     console.log(e.currentTarget.dataset.url)

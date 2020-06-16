@@ -23,6 +23,7 @@
   height: 100%;
   display: block;
   margin: 0 auto;
+  transition: transform .2s;
 }
 .noActive {
   transform: scale(0.85);

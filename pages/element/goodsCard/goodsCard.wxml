@@ -1,12 +1,11 @@
-<text class="size28 pad-30">横向排列</text>
-<grid col="3">
-  <view class="flex bg-color-white scroll">
-    <goods-card bindtoDatail="toDatail" col="3" wx:for="{{goodsInfo}}" wx:key="index" goodsInfo="{{item}}"></goods-card>
-  </view>
-</grid>
-<view class="size28 pad-30" style="margin-top:100rpx;">纵向排列 插槽</view>
+<text class="size28 pad-30">纵向排列</text>
+<view class="flex bg-color-white flex-wrap">
+    <goods-card bindtoDatail="toDatail" col="3" style="width:33.3%;" wx:for="{{goodsInfo}}" wx:key="index" goodsInfo="{{item}}"></goods-card>
+</view>
+
+<view class="size28 pad-30" style="margin-top:100rpx;">横向排列 插槽</view>
 <grid col="1" wx:for="{{goodsInfo}}" wx:key="index">
-  <view style="display: flex;justify-content: space-around;">
+  <view style="display: flex;">
     <goods-card col="1" goodsInfo="{{item}}" direction="h" bindtap="toDetail">
       <view slot="slot-info" class="add-cart spacing-col-sm flex space-between">
         <text class="size28 color51">已售1件</text>
@@ -17,7 +16,7 @@
 </grid>
 <view class="size28 pad-30" style="margin-top:100rpx;">数字框 插槽</view>
 <grid col="1" wx:for="{{goodsInfo}}" wx:key="index">
-  <view style="display: flex;justify-content: space-around;">
+  <view style="display: flex;">
     <goods-card col="1" goodsInfo="{{item}}" direction="h" bindtap="toDetail">
       <select-number slot="slot-opera" val="{{item.quantity}}" idx="{{index}}" bindinputNumber="inputNumber" class="select-number spacing-col-sm"></select-number>
     </goods-card>

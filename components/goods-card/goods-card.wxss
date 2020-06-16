@@ -63,3 +63,7 @@
   padding: 8rpx 12rpx;
   border-radius: 8rpx;
 }
+.col-1{width: 100%;}
+.col-2{width: 50%;}
+.col-3{width: 33.33%;}
+.col-4{width: 25%;}

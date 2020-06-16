@@ -13,7 +13,7 @@
   transform: translateX(112rpx);
   -webkit-transform: translateX(112rpx);
   margin-left: -112rpx;
-  transition: transform 0.4s;
+  transition: all 0.4s;
 }
 .delete{
   background-color: #ff4400;
@@ -24,7 +24,7 @@
   color: #fff;
   transform: translateX(112rpx);
   -webkit-transform: translateX(112rpx);
-  transition: transform 0.4s;
+  transition: all 0.4s;
 }
 
 .touch-move{

@@ -1,4 +1,5 @@
 <view class="annular-box">
-  <canvas canvas-id="annular" style="width: 100px; height: 100px;"></canvas>
+  <canvas canvas-id="annular-fixed" class="canvas"></canvas>
+  <canvas canvas-id="annular" class="canvas draw-canvas"></canvas>
   <text class="annular-percentage">{{percentage>100?100:percentage}}%</text>
 </view>

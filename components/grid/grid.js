@@ -16,6 +16,9 @@ Component({
   data: {
 
   },
+  options: {
+    addGlobalClass: true
+  },
 
   /**
    * 组件的方法列表

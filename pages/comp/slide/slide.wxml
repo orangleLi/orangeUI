@@ -1,19 +1,8 @@
-<view wx:for="{{list}}" wx:key="unique">
-  <slide-delete bind:deleteItem="deleteItem" data-index="{{index}}">
-    <view slot="info">
-      <i class="iconfont icon-aixin"></i>
-      {{item.content}}
-    </view>   
-    <view slot="opera">删除</view>
-  </slide-delete>
-</view>
-<slide-delete bind:deleteItem="clickItem">
-  <view slot="info">
-    <i class="iconfont icon-aixin"></i>
-    滑动删除-删除图标
-  </view>   
-  <view slot="opera">
-    <i class="iconfont icon-huiyuan"></i>
-    Click
+<!--pages/Slide/slide.wxml-->
+<view class="main" wx:for="{{list}}" wx:key="{{index}}">
+  <view class="slide {{active === index?'touch-move':''}}" data-index="{{index}}" 
+  bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+    {{item.content}}
   </view>
-</slide-delete>
+  <view class="delete {{active === index?'touch-move':''}}" data-index="{{index}}" bindtap="deleteItem">删除</view> 
+</view>

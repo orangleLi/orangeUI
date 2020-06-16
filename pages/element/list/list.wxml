@@ -27,5 +27,7 @@
       src="{{'/resources/images/right.png'}}">
   <switch checked="true" slot="fun"></switch>
 </list>
+<cell wx:for="{{iconList}}" wx:key="{{index}}" icon="{{item.icon}}"title="{{item.title}}"
+      desc="{{item.desc}}"></cell>
 <cell icon="icon-bianji" title="我的订单"></cell>
 <cell icon="icon-dingwei" title="我的地址" desc="描述" btLine="true"></cell>
