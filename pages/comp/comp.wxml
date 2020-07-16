@@ -60,7 +60,7 @@
       <view>Alert</view>
     </view>
 
-    <view class="fun-box bg-orange" style="--second: 1.2;" data-url="./selectCommunity/selectCommunity" bindtap="navTo">
+    <!-- <view class="fun-box bg-orange" style="--second: 1.2;" data-url="./selectCommunity/selectCommunity" bindtap="navTo">
       <view>选择小区</view>
       <view>Nav</view>
     </view>
@@ -68,6 +68,6 @@
     <view class="fun-box bg-pink" style="--second: 3.4;" data-url="./progressBar/progressBar" bindtap="navTo">
       <view>进度条</view>
       <view>ProgressBar</view>
-    </view>
+    </view> -->
     
   </view>
